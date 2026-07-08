@@ -1,4 +1,5 @@
 import type { BlogPost } from "@/data/posts";
+import { PostReactions } from "@/components/blog/PostReactions";
 import { Badge } from "@/components/shared/Badge";
 import { ButtonLink } from "@/components/shared/ButtonLink";
 import { CoverVisual } from "@/components/shared/CoverVisual";
@@ -18,6 +19,7 @@ export function FeaturedPost({ post }: FeaturedPostProps) {
         <p className="mt-5 text-sm font-medium text-muted">
           {post.author} · {post.date} · {post.readingTime}
         </p>
+        <PostReactions slug={post.slug} className="mt-5" />
         <div className="mt-6">
           <ButtonLink href={`/blog/${post.slug}`}>Read featured article</ButtonLink>
         </div>

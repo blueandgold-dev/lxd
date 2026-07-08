@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { BlogPost } from "@/data/posts";
+import { PostReactions } from "@/components/blog/PostReactions";
 import { Badge } from "@/components/shared/Badge";
 import { CoverVisual } from "@/components/shared/CoverVisual";
 
@@ -24,6 +25,7 @@ export function BlogCard({ post }: BlogCardProps) {
         <p className="mt-5 text-sm font-medium text-muted">
           {post.date} · {post.readingTime}
         </p>
+        <PostReactions slug={post.slug} className="mt-4" />
       </div>
     </article>
   );

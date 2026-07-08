@@ -1,10 +1,11 @@
 import type { BlogPost } from "@/data/posts";
 import type { TocItem } from "@/lib/posts";
+import { ArticleBody } from "@/components/blog/ArticleBody";
+import { BlogCard } from "@/components/blog/BlogCard";
+import { PostReactions } from "@/components/blog/PostReactions";
+import { TableOfContents } from "@/components/blog/TableOfContents";
 import { Badge } from "@/components/shared/Badge";
 import { CoverVisual } from "@/components/shared/CoverVisual";
-import { BlogCard } from "@/components/blog/BlogCard";
-import { ArticleBody } from "@/components/blog/ArticleBody";
-import { TableOfContents } from "@/components/blog/TableOfContents";
 
 type ArticleLayoutProps = {
   post: BlogPost;
@@ -27,6 +28,7 @@ export function ArticleLayout({ post, toc, relatedPosts }: ArticleLayoutProps) {
             <span aria-hidden="true">·</span>
             <span>{post.readingTime}</span>
           </div>
+          <PostReactions slug={post.slug} className="mt-6" />
         </div>
       </section>
       <section className="px-5 py-8 sm:px-6 lg:px-8">
