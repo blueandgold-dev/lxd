@@ -814,4 +814,356 @@ export const posts: BlogPost[] = [
       { type: "quote", text: "Storytelling gives the learning journey a voice, a path, and a reason to continue." },
     ],
   },
+  {
+    id: "post-005",
+    slug: "the-training-that-nobody-needed",
+    title: "The Training That Nobody Needed",
+    excerpt:
+      "A story about moving past a request for AI training to uncover the real learning need: helping teachers make confident classroom decisions.",
+    category: "AI in Education",
+    author: "LXD Editorial Team",
+    date: "July 8, 2026",
+    readingTime: "4 min read",
+    tags: ["AI in Education", "Learning Experience Design", "Instructional Decision-Making"],
+    coverImage: "/images/ai-learning-media.svg",
+    coverAlt: "Illustration of an AI-assisted learning media workspace with lesson prompts, review checks, and a media plan.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "When I first started helping a school design its AI Fundamentals course, the request sounded simple.",
+      },
+      {
+        type: "quote",
+        text: '"We need a three-hour training on artificial intelligence," the program coordinator told me. "Just cover the basics: what AI is, how ChatGPT works, some prompt examples, and maybe ethical issues."',
+      },
+      {
+        type: "paragraph",
+        text: "At first, it sounded reasonable. AI was everywhere. Teachers were curious. Students were already using it. The school wanted to respond quickly.",
+      },
+      {
+        type: "paragraph",
+        text: "So the easy answer would have been to build a slide deck.",
+      },
+      {
+        type: "list",
+        items: [
+          "Slide 1: What is AI?",
+          "Slide 2: What is machine learning?",
+          "Slide 3: What is generative AI?",
+          "Slide 4: Prompt engineering tips",
+          "Slide 5: Risks and ethics",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "It would have looked professional. It would have satisfied the request. It might even have received good feedback forms at the end.",
+      },
+      { type: "paragraph", text: "But something felt incomplete." },
+      {
+        type: "paragraph",
+        text: "So instead of opening PowerPoint, I asked a few questions.",
+      },
+      {
+        type: "quote",
+        text: '"What do you want the teachers to do differently after the training?"',
+      },
+      { type: "paragraph", text: "The coordinator paused." },
+      { type: "quote", text: '"Well, we want them to understand AI."' },
+      { type: "paragraph", text: "I asked again, gently." },
+      { type: "quote", text: '"Understand it so they can do what?"' },
+      { type: "heading", id: "the-real-learning-need", title: "The Real Learning Need" },
+      { type: "paragraph", text: "That question changed the conversation." },
+      {
+        type: "paragraph",
+        text: "After a few minutes, the real concern became clearer. Teachers were not simply lacking information about AI. They were unsure how to respond when students used AI in assignments. Some wanted to ban it completely. Others wanted to allow it but did not know how. A few were already using AI tools, but only to generate quizzes or lesson plans.",
+      },
+      { type: "paragraph", text: "The problem was not awareness." },
+      { type: "paragraph", text: "The problem was classroom decision-making." },
+      { type: "heading", id: "listening-before-designing", title: "Listening Before Designing" },
+      { type: "paragraph", text: "So I asked to speak with a few teachers." },
+      { type: "paragraph", text: "One teacher said:" },
+      {
+        type: "quote",
+        text: '"I know students are using AI, but I don\'t know how to tell if their work is still theirs."',
+      },
+      { type: "paragraph", text: "Another said:" },
+      {
+        type: "quote",
+        text: '"I want to use AI, but I don\'t want my students to become lazy."',
+      },
+      { type: "paragraph", text: "A third teacher said:" },
+      {
+        type: "quote",
+        text: '"I tried ChatGPT once, but the output was too generic. I didn\'t know how to make it useful."',
+      },
+      { type: "paragraph", text: "Those conversations changed the design completely." },
+      { type: "heading", id: "from-ai-lecture-to-ai-workshop", title: "From AI Lecture to AI Workshop" },
+      {
+        type: "paragraph",
+        text: "Instead of a three-hour lecture about AI, the learning experience became a workshop built around real classroom situations.",
+      },
+      { type: "paragraph", text: "The teachers were given scenarios:" },
+      {
+        type: "list",
+        items: [
+          "A student submits an essay that sounds too polished. What do you do?",
+          "A group uses AI to brainstorm project ideas. Is that acceptable?",
+          "A teacher wants to use AI to create differentiated activities for struggling learners. What should the prompt include?",
+          "A student asks whether using AI is cheating. How should the teacher explain the policy?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Each group discussed, decided, and revised their answers. Then they created a simple AI use guideline for their own subject area.",
+      },
+      {
+        type: "paragraph",
+        text: 'By the end, the teachers did not just "understand AI." They had practiced making decisions about AI.',
+      },
+      {
+        type: "list",
+        items: [
+          "They had drafted classroom rules.",
+          "They had tested prompts.",
+          "They had discussed academic integrity.",
+          "They had compared poor AI use with responsible AI use.",
+          "They had created something they could bring back to class the next day.",
+        ],
+      },
+      { type: "heading", id: "the-design-lesson", title: "The Design Lesson" },
+      { type: "paragraph", text: "The most important lesson for me was this:" },
+      {
+        type: "list",
+        items: [
+          "The stakeholder asked for training.",
+          "The learners needed confidence.",
+          "The organization needed consistency.",
+          "The real design challenge was not to explain AI, but to help teachers make better instructional decisions in an AI-enabled classroom.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "That is the difference between creating content and designing a learning experience.",
+      },
+    ],
+  },
+  {
+    id: "post-006",
+    slug: "ux-ui-in-learning-experience-design",
+    title: "The Product: UX and UI in Learning Experience Design",
+    excerpt:
+      "UX and UI shape how learners move through a learning product, reduce friction, understand tasks, recover from mistakes, and apply learning.",
+    category: "Learning Experience Design",
+    author: "LXD Editorial Team",
+    date: "July 8, 2026",
+    readingTime: "6 min read",
+    tags: ["Learning Experience Design", "UX", "UI", "Accessibility"],
+    coverImage: "/images/lxd-journey-map.svg",
+    coverAlt: "Illustration of a learning experience journey map with learner needs, practice, feedback, and transfer milestones.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "A learning product is more than a course, slide deck, video, worksheet, or online module. In Learning Experience Design (LXD), the product is the full experience a learner goes through while trying to understand, practice, and apply something useful.",
+      },
+      {
+        type: "paragraph",
+        text: "This is why User Experience (UX) and User Interface (UI) matter. They are not just design extras. They directly affect how learners engage with content, make decisions, complete tasks, and transfer learning to real work.",
+      },
+      { type: "heading", id: "what-is-ux-in-lxd", title: "What Is UX in LXD?" },
+      {
+        type: "paragraph",
+        text: "User Experience (UX) is about the learner's overall journey.",
+      },
+      { type: "paragraph", text: "In LXD, UX asks:" },
+      {
+        type: "quote",
+        text: "What is it like for the learner to go through this learning experience?",
+      },
+      {
+        type: "paragraph",
+        text: "A good learning experience should feel clear, relevant, guided, and useful. Learners should understand what they are doing, why it matters, and how it connects to real tasks.",
+      },
+      {
+        type: "paragraph",
+        text: "Poor UX happens when learners feel lost, overloaded, or forced to complete activities that do not help them perform better.",
+      },
+      { type: "heading", id: "start-with-learners-context", title: "UX Principle 1: Start With the Learner's Context" },
+      {
+        type: "paragraph",
+        text: "Good LXD begins with the learner's real situation.",
+      },
+      { type: "paragraph", text: "Before designing the product, ask:" },
+      {
+        type: "list",
+        items: [
+          "Who are the learners?",
+          "What do they need to do?",
+          "Where will they apply the learning?",
+          "What problems or constraints do they face?",
+          "What support do they need after the course?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "For example, teachers learning about AI do not only need definitions. They need classroom scenarios, policy guidance, prompt practice, and examples of responsible AI use.",
+      },
+      { type: "heading", id: "reduce-friction", title: "UX Principle 2: Reduce Friction" },
+      {
+        type: "paragraph",
+        text: "Friction happens when learners spend too much effort figuring out how to use the learning product instead of focusing on learning.",
+      },
+      {
+        type: "paragraph",
+        text: "Common sources of friction include unclear instructions, confusing navigation, too many clicks, inconsistent layouts, and hidden resources.",
+      },
+      { type: "paragraph", text: "A good learning product makes the next step obvious." },
+      { type: "heading", id: "design-for-action", title: "UX Principle 3: Design for Action" },
+      {
+        type: "paragraph",
+        text: "LXD should help learners do something, not just know something.",
+      },
+      {
+        type: "paragraph",
+        text: "Instead of only presenting information, design activities where learners can practice realistic tasks.",
+      },
+      { type: "paragraph", text: "Examples:" },
+      {
+        type: "list",
+        items: [
+          "Responding to a customer complaint",
+          "Solving a workplace problem",
+          "Writing and improving an AI prompt",
+          "Choosing the correct process in a scenario",
+          "Practicing a software workflow",
+        ],
+      },
+      { type: "paragraph", text: "Learning becomes stronger when learners apply ideas in context." },
+      { type: "heading", id: "support-mistakes-and-recovery", title: "UX Principle 4: Support Mistakes and Recovery" },
+      {
+        type: "paragraph",
+        text: "Mistakes are part of learning. A strong learning experience anticipates where learners may struggle and gives useful feedback.",
+      },
+      { type: "paragraph", text: "Instead of saying only:" },
+      { type: "quote", text: "Incorrect. Try again." },
+      {
+        type: "paragraph",
+        text: "Better feedback explains what went wrong and how the learner can improve.",
+      },
+      {
+        type: "paragraph",
+        text: "Good UX helps learners recover, reflect, and try again with better understanding.",
+      },
+      { type: "heading", id: "what-is-ui-in-lxd", title: "What Is UI in LXD?" },
+      {
+        type: "paragraph",
+        text: "User Interface (UI) is about the visible and interactive parts of the learning product.",
+      },
+      { type: "paragraph", text: "This includes:" },
+      {
+        type: "list",
+        items: ["Buttons", "Menus", "Layouts", "Screens", "Icons", "Colors", "Typography", "Forms", "Navigation", "Feedback messages"],
+      },
+      {
+        type: "paragraph",
+        text: "If UX is the learner's journey, UI is the surface the learner uses to move through that journey.",
+      },
+      {
+        type: "paragraph",
+        text: "Good UI helps learners focus. Poor UI creates confusion and increases cognitive load.",
+      },
+      { type: "heading", id: "make-navigation-clear", title: "UI Principle 1: Make Navigation Clear" },
+      {
+        type: "paragraph",
+        text: "Learners should always know where they are, what they are doing, and what comes next.",
+      },
+      { type: "paragraph", text: "Use clear labels such as:" },
+      {
+        type: "list",
+        items: ["Start Practice", "Review Example", "Check Your Answer", "Continue to Scenario", "Download Job Aid"],
+      },
+      {
+        type: "paragraph",
+        text: "Avoid making learners guess what a button or link does.",
+      },
+      { type: "heading", id: "use-visual-hierarchy", title: "UI Principle 2: Use Visual Hierarchy" },
+      {
+        type: "paragraph",
+        text: "Visual hierarchy helps learners see what is most important.",
+      },
+      { type: "paragraph", text: "Use headings, spacing, font size, grouping, and contrast to separate:" },
+      {
+        type: "list",
+        items: ["Main ideas", "Instructions", "Examples", "Activities", "Feedback", "Resources"],
+      },
+      {
+        type: "paragraph",
+        text: "When everything looks equally important, learners may not know where to focus.",
+      },
+      { type: "heading", id: "keep-the-design-consistent", title: "UI Principle 3: Keep the Design Consistent" },
+      {
+        type: "paragraph",
+        text: "Consistency makes a learning product easier to use.",
+      },
+      {
+        type: "paragraph",
+        text: "Use the same patterns for similar screens, activities, buttons, icons, and feedback messages. When the interface behaves consistently, learners can focus on the learning task instead of figuring out the design.",
+      },
+      { type: "heading", id: "remove-visual-noise", title: "UI Principle 4: Remove Visual Noise" },
+      {
+        type: "paragraph",
+        text: "A learning product does not need to be overloaded with graphics, animation, colors, and decorative elements.",
+      },
+      {
+        type: "paragraph",
+        text: "Every visual element should have a purpose. It should guide, clarify, organize, or support learning.",
+      },
+      { type: "paragraph", text: "Clean design gives learners room to think." },
+      { type: "heading", id: "design-for-accessibility", title: "UI Principle 5: Design for Accessibility" },
+      {
+        type: "paragraph",
+        text: "Accessible UI helps more learners participate fully.",
+      },
+      { type: "paragraph", text: "Good accessibility practices include:" },
+      {
+        type: "list",
+        items: [
+          "Readable fonts",
+          "Strong color contrast",
+          "Keyboard-friendly navigation",
+          "Captions for videos",
+          "Descriptive links",
+          "Meaningful alt text",
+          "Clear and simple language",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Accessibility is not only a compliance requirement. It is part of good learning design.",
+      },
+      { type: "heading", id: "ux-and-ui-work-together", title: "UX and UI Work Together" },
+      {
+        type: "paragraph",
+        text: "UX and UI are connected, but they are not the same.",
+      },
+      { type: "paragraph", text: "UX asks:" },
+      {
+        type: "quote",
+        text: "Is the learning experience useful, meaningful, and aligned with real learner needs?",
+      },
+      { type: "paragraph", text: "UI asks:" },
+      {
+        type: "quote",
+        text: "Is the interface clear, usable, accessible, and visually supportive?",
+      },
+      {
+        type: "paragraph",
+        text: "A product can look beautiful but still fail if the experience is irrelevant. A product can also contain strong content but fail because the interface is confusing.",
+      },
+      { type: "paragraph", text: "The goal is to combine both." },
+      {
+        type: "paragraph",
+        text: "A strong LXD product should be useful, usable, accessible, and connected to real performance. When UX and UI are designed well, learners are more likely to stay engaged, understand the material, and apply what they learned.",
+      },
+    ],
+  },
 ];
