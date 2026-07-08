@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Storytelling in learning experience design</title>
+  <desc id="desc">Original illustration of a learner journey shown as story panels, decision points, and reflection notes.</desc>
+  <rect width="1200" height="720" fill="#fffbf5"/>
+  <rect x="96" y="78" width="1008" height="564" rx="36" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+  <path d="M176 512c96-120 189-62 282-156 93-93 169-112 269-32 71 57 143 79 297-18" fill="none" stroke="#0f766e" stroke-width="18" stroke-linecap="round"/>
+  <g fill="#f5f1e8" stroke="#d6d3ca" stroke-width="3">
+    <rect x="158" y="142" width="230" height="156" rx="20"/>
+    <rect x="485" y="118" width="230" height="156" rx="20"/>
+    <rect x="808" y="142" width="230" height="156" rx="20"/>
+    <rect x="267" y="416" width="230" height="156" rx="20"/>
+    <rect x="704" y="416" width="230" height="156" rx="20"/>
+  </g>
+  <g fill="#0f766e">
+    <circle cx="176" cy="512" r="24"/>
+    <circle cx="458" cy="356" r="24"/>
+    <circle cx="727" cy="324" r="24"/>
+    <circle cx="1024" cy="306" r="24"/>
+  </g>
+  <g fill="#f59e0b">
+    <path d="M273 173l16 32 35 5-25 25 6 35-32-16-31 16 6-35-25-25 35-5z"/>
+    <circle cx="600" cy="194" r="38"/>
+    <path d="M885 186h76v58h-76z"/>
+    <path d="M370 470l45 45-45 45-45-45z"/>
+    <circle cx="819" cy="514" r="40"/>
+  </g>
+  <g fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">
+    <text x="200" y="343">Context</text>
+    <text x="527" y="319">Challenge</text>
+    <text x="850" y="343">Decision</text>
+    <text x="309" y="617">Action</text>
+    <text x="746" y="617">Reflection</text>
+  </g>
+  <g fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="21">
+    <text x="200" y="374">make the lesson real</text>
+    <text x="527" y="350">create a reason to care</text>
+    <text x="850" y="374">ask what learners would do</text>
+    <text x="309" y="648">practice in context</text>
+    <text x="746" y="648">connect meaning to growth</text>
+  </g>
+</svg>

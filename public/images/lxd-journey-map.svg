@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Learning experience journey map</title>
+  <desc id="desc">Original illustration of sticky notes, pathways, and learner milestones on a course planning board.</desc>
+  <rect width="1200" height="720" fill="#fffbf5"/>
+  <rect x="96" y="82" width="1008" height="556" rx="36" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+  <path d="M171 519C300 401 425 452 548 337c120-112 215-119 357-34 50 30 88 47 145 34" fill="none" stroke="#0f766e" stroke-width="18" stroke-linecap="round"/>
+  <path d="M171 519C300 401 425 452 548 337c120-112 215-119 357-34 50 30 88 47 145 34" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 28"/>
+  <g fill="#f5f1e8" stroke="#d6d3ca" stroke-width="3">
+    <rect x="154" y="148" width="218" height="130" rx="18"/>
+    <rect x="436" y="124" width="218" height="130" rx="18"/>
+    <rect x="726" y="148" width="218" height="130" rx="18"/>
+    <rect x="823" y="421" width="218" height="130" rx="18"/>
+    <rect x="300" y="449" width="218" height="130" rx="18"/>
+  </g>
+  <g fill="#0f766e">
+    <circle cx="172" cy="519" r="24"/>
+    <circle cx="548" cy="337" r="24"/>
+    <circle cx="905" cy="303" r="24"/>
+    <circle cx="1050" cy="337" r="24"/>
+  </g>
+  <g fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">
+    <text x="190" y="205">Empathize</text>
+    <text x="472" y="181">Journey</text>
+    <text x="762" y="205">Practice</text>
+    <text x="859" y="478">Transfer</text>
+    <text x="336" y="506">Feedback</text>
+  </g>
+  <g fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="22">
+    <text x="190" y="240">learner needs</text>
+    <text x="472" y="216">clear sequence</text>
+    <text x="762" y="240">active tasks</text>
+    <text x="859" y="513">real context</text>
+    <text x="336" y="541">improve early</text>
+  </g>
+  <circle cx="994" cy="163" r="42" fill="#f59e0b" opacity=".18"/>
+  <circle cx="247" cy="363" r="32" fill="#0f766e" opacity=".14"/>
+</svg>

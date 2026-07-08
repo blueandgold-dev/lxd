@@ -1,26 +1,159 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffbf5;
+  --foreground: #1f2937;
+  --surface: #ffffff;
+  --secondary: #f5f1e8;
+  --muted: #64748b;
+  --border: #e5e7eb;
+  --primary: #0f766e;
+  --primary-dark: #115e59;
+  --accent: #f59e0b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.article-prose {
+  color: var(--foreground);
+  font-size: 1.0625rem;
+  line-height: 1.9;
+}
+
+.article-prose p {
+  margin-top: 1.25rem;
+}
+
+.article-prose h2 {
+  scroll-margin-top: 7rem;
+  margin-top: 2.75rem;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  line-height: 1.2;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.article-prose ul,
+.article-prose ol {
+  margin-top: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.article-prose ul {
+  list-style: disc;
+}
+
+.article-prose ol {
+  list-style: decimal;
+}
+
+.article-prose li {
+  margin-top: 0.75rem;
+  padding-left: 0.35rem;
+}
+
+.article-prose li span {
+  display: block;
+}
+
+.article-prose blockquote {
+  margin-top: 1.5rem;
+  border-left: 4px solid var(--accent);
+  background: var(--secondary);
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  color: var(--foreground);
+  font-weight: 550;
+}
+
+.article-prose pre {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: #111827;
+  padding: 1rem 1.25rem;
+  color: #f9fafb;
+  font-size: 0.925rem;
+  line-height: 1.7;
+}
+
+.article-prose code {
+  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+
+.article-table-wrapper {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.article-prose table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.article-prose th,
+.article-prose td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-prose th {
+  background: var(--secondary);
+  color: var(--foreground);
+  font-weight: 650;
+}
+
+.article-image {
+  margin-top: 1.75rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--surface);
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-image figcaption {
+  border-top: 1px solid var(--border);
+  background: var(--secondary);
+  padding: 0.85rem 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }

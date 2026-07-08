@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">Learning design studio desk</title>
+  <desc id="desc">Original illustration of a calm desk with course journey cards, learner notes, and feedback loops.</desc>
+  <rect width="960" height="720" fill="#ffffff"/>
+  <rect x="70" y="76" width="820" height="568" rx="34" fill="#f5f1e8" stroke="#e5e7eb" stroke-width="4"/>
+  <rect x="132" y="132" width="696" height="118" rx="22" fill="#ffffff"/>
+  <rect x="132" y="298" width="314" height="250" rx="22" fill="#ffffff"/>
+  <rect x="514" y="298" width="314" height="250" rx="22" fill="#ffffff"/>
+  <path d="M202 442c78-88 148-52 223-124 73-71 141-60 215 3 45 38 83 49 126 21" fill="none" stroke="#0f766e" stroke-width="14" stroke-linecap="round"/>
+  <g fill="#0f766e">
+    <circle cx="202" cy="442" r="20"/>
+    <circle cx="425" cy="318" r="20"/>
+    <circle cx="640" cy="321" r="20"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-width="9">
+    <path d="M184 174h260M184 212h178" stroke="#0f766e"/>
+    <path d="M572 174h160M572 212h92" stroke="#f59e0b"/>
+    <path d="M180 592h600" stroke="#d6d3ca"/>
+  </g>
+  <g fill="#fffbf5" stroke="#e5e7eb" stroke-width="3">
+    <rect x="176" y="344" width="116" height="68" rx="14"/>
+    <rect x="340" y="382" width="116" height="68" rx="14"/>
+    <rect x="551" y="367" width="116" height="68" rx="14"/>
+    <rect x="680" y="402" width="116" height="68" rx="14"/>
+  </g>
+  <g fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">
+    <text x="184" y="512">Design journey</text>
+    <text x="568" y="512">Feedback loop</text>
+  </g>
+  <g fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="20">
+    <text x="184" y="542">from need to transfer</text>
+    <text x="568" y="542">practice, reflect, improve</text>
+  </g>
+</svg>

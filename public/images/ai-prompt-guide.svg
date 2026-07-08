@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI prompt guide for educators</title>
+  <desc id="desc">Original illustration of prompt templates, lesson planning cards, and educator feedback notes.</desc>
+  <rect width="1200" height="720" fill="#fffbf5"/>
+  <rect x="96" y="76" width="1008" height="568" rx="36" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+  <rect x="164" y="132" width="360" height="456" rx="24" fill="#f5f1e8"/>
+  <rect x="584" y="132" width="452" height="126" rx="22" fill="#ecfdf5" stroke="#99f6e4" stroke-width="3"/>
+  <rect x="584" y="302" width="452" height="126" rx="22" fill="#fff7ed" stroke="#fed7aa" stroke-width="3"/>
+  <rect x="584" y="472" width="452" height="116" rx="22" fill="#f8fafc" stroke="#e5e7eb" stroke-width="3"/>
+  <g fill="none" stroke-linecap="round" stroke-width="10">
+    <path d="M225 216h236M225 268h178M225 320h216M225 372h132" stroke="#0f766e"/>
+    <path d="M646 184h252M646 224h180" stroke="#0f766e"/>
+    <path d="M646 354h262M646 394h150" stroke="#f59e0b"/>
+    <path d="M646 522h234M646 558h190" stroke="#64748b"/>
+  </g>
+  <circle cx="444" cy="470" r="54" fill="#0f766e"/>
+  <path d="M421 470h46M444 447v46" stroke="#ffffff" stroke-width="11" stroke-linecap="round"/>
+  <g fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">
+    <text x="224" y="164">Prompt templates</text>
+    <text x="646" y="170">Context</text>
+    <text x="646" y="340">Constraints</text>
+    <text x="646" y="510">Revise</text>
+  </g>
+  <g fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="22">
+    <text x="224" y="548">lesson, activity, feedback</text>
+    <text x="646" y="246">learner profile and goal</text>
+    <text x="646" y="416">time, tools, class size</text>
+    <text x="646" y="580">improve with follow-up prompts</text>
+  </g>
+</svg>

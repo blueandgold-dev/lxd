@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">AI-assisted learning media workspace</title>
+  <desc id="desc">Original illustration of an educator reviewing AI-generated lesson cards, media scripts, and learning prompts.</desc>
+  <rect width="1200" height="720" fill="#fffbf5"/>
+  <rect x="104" y="76" width="992" height="568" rx="34" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+  <rect x="162" y="136" width="402" height="448" rx="24" fill="#f5f1e8"/>
+  <rect x="636" y="136" width="402" height="198" rx="24" fill="#ecfdf5" stroke="#99f6e4" stroke-width="3"/>
+  <rect x="636" y="386" width="402" height="198" rx="24" fill="#fff7ed" stroke="#fed7aa" stroke-width="3"/>
+  <g fill="none" stroke="#0f766e" stroke-width="10" stroke-linecap="round">
+    <path d="M247 281h230M247 333h172M247 385h219"/>
+    <path d="M705 219h248M705 269h176"/>
+  </g>
+  <g fill="none" stroke="#f59e0b" stroke-width="10" stroke-linecap="round">
+    <path d="M705 469h224M705 519h146"/>
+  </g>
+  <circle cx="294" cy="205" r="42" fill="#0f766e"/>
+  <path d="M294 177v56M266 205h56" stroke="#ffffff" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="906" cy="215" r="46" fill="#0f766e" opacity=".15"/>
+  <path d="M885 215l15 15 31-38" fill="none" stroke="#0f766e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="907" cy="465" r="46" fill="#f59e0b" opacity=".18"/>
+  <path d="M884 465h46M907 442v46" stroke="#f59e0b" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">
+    <text x="247" y="506">Prompt to prototype</text>
+    <text x="706" y="181">Learning checks</text>
+    <text x="706" y="431">Media plan</text>
+  </g>
+  <g fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="22">
+    <text x="247" y="541">human review shapes the result</text>
+    <text x="706" y="309">outcomes, feedback, ethics</text>
+    <text x="706" y="559">script, scenes, reflection</text>
+  </g>
+</svg>
