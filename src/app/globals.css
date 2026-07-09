@@ -12,6 +12,18 @@
   --accent: #f59e0b;
 }
 
+.dark {
+  --background: #101615;
+  --foreground: #f4f7f6;
+  --surface: #17211f;
+  --secondary: #202c29;
+  --muted: #a7b6b3;
+  --border: #2f403c;
+  --primary: #2dd4bf;
+  --primary-dark: #14b8a6;
+  --accent: #fbbf24;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -30,10 +42,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 180ms ease, color 180ms ease;
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 .article-prose {

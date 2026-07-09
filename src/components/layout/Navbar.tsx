@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggle } from "@/components/shared/ThemeToggle";
 
 const navigation = [
   { href: "/", label: "Home" },
@@ -31,12 +32,15 @@ export function Navbar() {
             </Link>
           ))}
         </div>
-        <Link
-          href="/blog"
-          className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:inline-flex"
-        >
-          Read articles
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link
+            href="/blog"
+            className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary md:inline-flex"
+          >
+            Read articles
+          </Link>
+          <ThemeToggle />
+        </div>
       </nav>
       <div className="flex gap-1 overflow-x-auto border-t border-border px-5 py-2 md:hidden">
         {navigation.map((item) => (
