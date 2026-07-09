@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Learning Experience Designer workspace</title>
+  <desc id="desc">Original illustration of a learning experience designer workspace with learner research, journey mapping, prototyping, and evaluation cards.</desc>
+  <rect width="1200" height="720" fill="#fffbf5"/>
+  <rect x="94" y="78" width="1012" height="564" rx="36" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+  <rect x="154" y="134" width="320" height="194" rx="24" fill="#f5f1e8" stroke="#d6d3ca" stroke-width="3"/>
+  <rect x="510" y="134" width="220" height="194" rx="24" fill="#ecfdf5" stroke="#99f6e4" stroke-width="3"/>
+  <rect x="766" y="134" width="280" height="194" rx="24" fill="#fff7ed" stroke="#fed7aa" stroke-width="3"/>
+  <rect x="154" y="390" width="260" height="174" rx="24" fill="#fff7ed" stroke="#fed7aa" stroke-width="3"/>
+  <rect x="456" y="390" width="284" height="174" rx="24" fill="#f5f1e8" stroke="#d6d3ca" stroke-width="3"/>
+  <rect x="782" y="390" width="264" height="174" rx="24" fill="#ecfdf5" stroke="#99f6e4" stroke-width="3"/>
+  <path d="M232 436c116-128 244-78 370-156 113-71 220-76 346 32" fill="none" stroke="#0f766e" stroke-width="16" stroke-linecap="round"/>
+  <path d="M232 436c116-128 244-78 370-156 113-71 220-76 346 32" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round" stroke-dasharray="4 24"/>
+  <g fill="#0f766e">
+    <circle cx="232" cy="436" r="22"/>
+    <circle cx="602" cy="280" r="22"/>
+    <circle cx="948" cy="312" r="22"/>
+  </g>
+  <g fill="none" stroke="#0f766e" stroke-width="9" stroke-linecap="round">
+    <path d="M214 228h198M214 276h146"/>
+    <path d="M822 224h166M822 272h108"/>
+    <path d="M510 470h184M510 514h132"/>
+  </g>
+  <g fill="none" stroke="#f59e0b" stroke-width="9" stroke-linecap="round">
+    <path d="M206 488h152M206 526h98"/>
+    <path d="M842 472h150M842 514h112"/>
+  </g>
+  <circle cx="620" cy="228" r="44" fill="#0f766e"/>
+  <path d="M620 198v60M590 228h60" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="284" cy="196" r="38" fill="#f59e0b" opacity=".18"/>
+  <path d="M264 196l14 14 29-36" fill="none" stroke="#f59e0b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">
+    <text x="214" y="184">Research</text>
+    <text x="554" y="184">Prototype</text>
+    <text x="822" y="184">Design</text>
+    <text x="206" y="462">Journey</text>
+    <text x="510" y="444">Feedback</text>
+    <text x="842" y="444">Measure</text>
+  </g>
+  <g fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="21">
+    <text x="214" y="310">learner needs</text>
+    <text x="554" y="310">test early</text>
+    <text x="822" y="310">clear activities</text>
+    <text x="206" y="548">map the path</text>
+    <text x="510" y="542">improve with evidence</text>
+    <text x="842" y="542">outcomes and transfer</text>
+  </g>
+  <circle cx="1004" cy="164" r="38" fill="#f59e0b" opacity=".16"/>
+  <circle cx="132" cy="350" r="32" fill="#0f766e" opacity=".14"/>
+</svg>
