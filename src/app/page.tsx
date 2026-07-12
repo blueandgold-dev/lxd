@@ -1,7 +1,7 @@
-import { BlogCard } from "@/components/blog/BlogCard";
 import { FeaturedPost } from "@/components/blog/FeaturedPost";
 import { HeroSection } from "@/components/home/HeroSection";
 import { NewsletterSection } from "@/components/home/NewsletterSection";
+import { RecentArticles } from "@/components/home/RecentArticles";
 import { ResourceCard } from "@/components/shared/ResourceCard";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { getAllPosts, getFeaturedPosts } from "@/lib/posts";
@@ -30,11 +30,7 @@ export default function Home() {
       <section className="bg-secondary px-5 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeader title="Recent articles" description="Long-form guides for educators, trainers, and instructional designers." />
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
-              <BlogCard key={post.id} post={post} />
-            ))}
-          </div>
+          <RecentArticles posts={posts} />
         </div>
       </section>
       <section className="px-5 py-16 sm:px-6 lg:px-8">
