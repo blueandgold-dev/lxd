@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Learner journey map template</title>
+  <desc id="desc">Original illustration of a spreadsheet-style learner journey map with stages, emotions, pain points, and design opportunities.</desc>
+  <rect width="1200" height="720" fill="#fffbf5"/>
+  <rect x="94" y="78" width="1012" height="564" rx="36" fill="#ffffff" stroke="#e5e7eb" stroke-width="4"/>
+  <rect x="154" y="132" width="892" height="430" rx="24" fill="#f5f1e8" stroke="#d6d3ca" stroke-width="3"/>
+  <rect x="154" y="132" width="892" height="76" rx="24" fill="#0f766e"/>
+  <path d="M154 184h892" stroke="#0f766e" stroke-width="48"/>
+  <g stroke="#d6d3ca" stroke-width="3">
+    <path d="M332 132v430"/>
+    <path d="M510 132v430"/>
+    <path d="M688 132v430"/>
+    <path d="M866 132v430"/>
+    <path d="M154 296h892"/>
+    <path d="M154 384h892"/>
+    <path d="M154 472h892"/>
+  </g>
+  <g fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">
+    <text x="190" y="180">Stage</text>
+    <text x="366" y="180">Action</text>
+    <text x="544" y="180">Thought</text>
+    <text x="716" y="180">Pain point</text>
+    <text x="900" y="180">Opportunity</text>
+  </g>
+  <path d="M207 602C314 520 407 536 502 451c93-84 181-91 281-37 83 45 160 46 250-44" fill="none" stroke="#0f766e" stroke-width="18" stroke-linecap="round"/>
+  <path d="M207 602C314 520 407 536 502 451c93-84 181-91 281-37 83 45 160 46 250-44" fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 28"/>
+  <g fill="#0f766e">
+    <circle cx="207" cy="602" r="23"/>
+    <circle cx="502" cy="451" r="23"/>
+    <circle cx="783" cy="414" r="23"/>
+    <circle cx="1033" cy="370" r="23"/>
+  </g>
+  <g fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">
+    <text x="190" y="258">Onboarding</text>
+    <text x="190" y="346">Learning</text>
+    <text x="190" y="434">Practice</text>
+    <text x="190" y="522">Apply</text>
+  </g>
+  <g fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="19">
+    <text x="366" y="258">Start here</text>
+    <text x="544" y="258">Where first?</text>
+    <text x="716" y="258">Unclear path</text>
+    <text x="900" y="258">Checklist</text>
+    <text x="366" y="346">Explore ideas</text>
+    <text x="544" y="346">Am I ready?</text>
+    <text x="716" y="346">Long lesson</text>
+    <text x="900" y="346">Chunk content</text>
+    <text x="366" y="434">Try a task</text>
+    <text x="544" y="434">Need example</text>
+    <text x="716" y="434">Too difficult</text>
+    <text x="900" y="434">Guided template</text>
+    <text x="366" y="522">Use skill</text>
+    <text x="544" y="522">How adapt?</text>
+    <text x="716" y="522">No follow-up</text>
+    <text x="900" y="522">Job aid</text>
+  </g>
+  <g fill="#f59e0b">
+    <circle cx="1000" cy="142" r="42" opacity=".2"/>
+    <path d="M976 142h48M1000 118v48" stroke="#f59e0b" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="244" cy="392" r="34" opacity=".16"/>
+  </g>
+</svg>

@@ -175,3 +175,77 @@ html.dark {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
+.article-download {
+  margin-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 0.5rem;
+  background: var(--secondary);
+  padding: 1.25rem;
+}
+
+.article-download h3 {
+  margin-top: 0.25rem;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.article-download p {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.article-download .article-download__eyebrow {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-download a {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  background: var(--primary);
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.article-download a:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.article-download a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.article-download svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (max-width: 640px) {
+  .article-download {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

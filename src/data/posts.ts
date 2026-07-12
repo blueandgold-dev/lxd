@@ -6,7 +6,8 @@ export type ArticleBlock =
   | { type: "code"; code: string }
   | { type: "table"; headers: string[]; rows: string[][] }
   | { type: "image"; src: string; alt: string; caption: string }
-  | { type: "quote"; text: string };
+  | { type: "quote"; text: string }
+  | { type: "download"; title: string; description: string; href: string; fileType: string };
 
 export type BlogPost = {
   id: string;
@@ -1524,6 +1525,636 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "When these elements are designed together, assessment becomes more than evaluation. It becomes a learning experience.",
+      },
+    ],
+  },
+  {
+    id: "post-010",
+    slug: "how-to-create-a-learner-journey-map",
+    title: "How to Create a Learner Journey Map",
+    excerpt:
+      "A learner journey map helps you see a course, workshop, or training program through the learner's eyes, from first interest to real-world application.",
+    category: "Course Design",
+    author: "LXD Editorial Team",
+    date: "July 12, 2026",
+    readingTime: "6 min read",
+    tags: ["Journey Mapping", "Course Design", "Learner Research"],
+    featured: true,
+    coverImage: "/images/learner-journey-map-template.svg",
+    coverAlt:
+      "Illustration of a learner journey map template with stages, learner thoughts, pain points, and design opportunities.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "A learner journey map helps you see a course, workshop, or training program through the learner's eyes.",
+      },
+      {
+        type: "paragraph",
+        text: "It shows more than the content you plan to teach. It captures what learners are trying to achieve, what they do at each stage, what they may be thinking, and where they could become confused or discouraged.",
+      },
+      {
+        type: "quote",
+        text: "Think of it as a story of the learner's experience, from the first moment of interest to the point where learning is applied in real life.",
+      },
+      {
+        type: "download",
+        title: "Learner Journey Map Template",
+        description:
+          "Use the spreadsheet template to map learner actions, thoughts, emotions, pain points, and design opportunities for your own course or workshop.",
+        href: "/resources/learner-journey-map-template.xlsx",
+        fileType: "XLSX template",
+      },
+      { type: "heading", id: "why-create-one", title: "Why Create One?" },
+      {
+        type: "paragraph",
+        text: "A course can have accurate content and still feel difficult to complete.",
+      },
+      {
+        type: "paragraph",
+        text: "Learners may not know where to begin. Instructions may feel unclear. A lesson may move too quickly. Feedback may arrive too late. These moments can reduce confidence even when the learning material itself is good.",
+      },
+      {
+        type: "paragraph",
+        text: "A journey map helps you find these moments before they become larger problems.",
+      },
+      { type: "paragraph", text: "It can reveal where learners need:" },
+      {
+        type: "list",
+        items: [
+          "clearer directions",
+          "better examples",
+          "more opportunities to practise",
+          "timely feedback",
+          "encouragement or reassurance",
+          "help applying the learning in a real situation",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Good learning design is not only about what people need to know. It is also about what they experience while learning it.",
+      },
+      { type: "heading", id: "start-with-the-learner", title: "1. Start With the Learner" },
+      {
+        type: "paragraph",
+        text: "Begin by describing the people you are designing for.",
+      },
+      { type: "paragraph", text: "Ask:" },
+      {
+        type: "list",
+        items: [
+          "What do they already know?",
+          "What are they trying to achieve?",
+          "Why does this learning matter to them?",
+          "What may prevent them from succeeding?",
+          "When and where will they learn?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A working professional may need flexible activities that can be completed in short periods. A beginner may need more examples, simpler language, and early opportunities to succeed.",
+      },
+      {
+        type: "paragraph",
+        text: "You do not need to know everything about your learners. Start with what you know, then improve the map using interviews, surveys, observations, and feedback.",
+      },
+      { type: "heading", id: "define-the-destination", title: "2. Define the Destination" },
+      {
+        type: "paragraph",
+        text: "A journey needs a clear destination.",
+      },
+      {
+        type: "paragraph",
+        text: "Describe what learners should be able to do by the end of the experience. Focus on an observable action rather than a broad idea.",
+      },
+      { type: "paragraph", text: "Instead of:" },
+      { type: "quote", text: "Understand project management." },
+      { type: "paragraph", text: "Use:" },
+      { type: "quote", text: "Create a simple project plan for a small team." },
+      {
+        type: "paragraph",
+        text: "A specific goal helps you decide which activities, resources, and assessments belong in the journey.",
+      },
+      { type: "heading", id: "identify-the-main-stages", title: "3. Identify the Main Stages" },
+      {
+        type: "paragraph",
+        text: "Break the experience into meaningful stages.",
+      },
+      { type: "paragraph", text: "A typical learner journey may include:" },
+      {
+        type: "orderedList",
+        items: [
+          { title: "Awareness", text: "" },
+          { title: "Enrollment", text: "" },
+          { title: "Onboarding", text: "" },
+          { title: "Learning", text: "" },
+          { title: "Practice", text: "" },
+          { title: "Assessment", text: "" },
+          { title: "Application", text: "" },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Your stages may be different. A short workshop may begin with registration and end with a practical activity. A semester-long course may include several cycles of learning, practice, feedback, and revision.",
+      },
+      {
+        type: "paragraph",
+        text: "Choose stages that reflect the learner's actual experience.",
+      },
+      { type: "heading", id: "capture-actions-thoughts-and-emotions", title: "4. Capture Actions, Thoughts, and Emotions" },
+      {
+        type: "paragraph",
+        text: "For each stage, write down what the learner does.",
+      },
+      {
+        type: "paragraph",
+        text: "Then consider what they may be thinking and feeling.",
+      },
+      { type: "paragraph", text: "During onboarding, a learner might think:" },
+      { type: "quote", text: "Where should I start?" },
+      { type: "paragraph", text: "During a difficult lesson:" },
+      { type: "quote", text: "Am I the only person who does not understand this?" },
+      { type: "paragraph", text: "Before an assessment:" },
+      { type: "quote", text: "What does a good answer look like?" },
+      {
+        type: "paragraph",
+        text: "These thoughts matter because emotions affect participation, persistence, and confidence.",
+      },
+      {
+        type: "paragraph",
+        text: "Your first version may contain assumptions. Mark them as assumptions and validate them with real learners whenever possible.",
+      },
+      { type: "heading", id: "find-the-pain-points", title: "5. Find the Pain Points" },
+      {
+        type: "paragraph",
+        text: "Pain points are moments that create unnecessary difficulty.",
+      },
+      {
+        type: "list",
+        items: [
+          "unclear instructions",
+          "long lessons",
+          "unfamiliar terminology",
+          "difficult navigation",
+          "activities that do not match the assessment",
+          "delayed feedback",
+          "missing examples",
+          "no clear way to ask for help",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Look at each pain point and ask what could make the experience easier to follow.",
+      },
+      {
+        type: "paragraph",
+        text: "A long lesson may need smaller sections. A confusing assignment may need a sample output. A difficult task may need guided practice before independent work.",
+      },
+      {
+        type: "quote",
+        text: "The goal is not to remove every challenge. Productive challenge supports learning. Unnecessary confusion does not.",
+      },
+      { type: "heading", id: "add-support-and-design-opportunities", title: "6. Add Support and Design Opportunities" },
+      {
+        type: "paragraph",
+        text: "For every important challenge, identify the support learners may need.",
+      },
+      {
+        type: "paragraph",
+        text: "This might include a welcome guide, orientation video, checklist, worked example, template, practice exercise, progress reminder, discussion space, or feedback session.",
+      },
+      {
+        type: "paragraph",
+        text: "The journey map should help you move from observation to action.",
+      },
+      { type: "paragraph", text: "Instead of writing only:" },
+      { type: "quote", text: "Learners are confused during onboarding." },
+      { type: "paragraph", text: "Add a design opportunity:" },
+      { type: "quote", text: "Create a two-minute guided tour and show one clear first action." },
+      { type: "heading", id: "sample-learner-journey-map", title: "Sample Learner Journey Map" },
+      {
+        type: "table",
+        headers: ["Stage", "Learner action", "Thoughts and emotions", "Pain point", "Design opportunity"],
+        rows: [
+          [
+            "Awareness",
+            "Reads the course description",
+            "Is this useful for me? Curious but cautious",
+            "The benefit is unclear",
+            "Show a practical outcome and who the course is for",
+          ],
+          [
+            "Onboarding",
+            "Logs in and explores the platform",
+            "Where should I begin? Hopeful but uncertain",
+            "Navigation feels unfamiliar",
+            "Add a guided tour and a start-here checklist",
+          ],
+          [
+            "Learning",
+            "Watches, reads, and completes activities",
+            "Am I understanding this? Engaged but challenged",
+            "Lessons are too long",
+            "Break content into shorter sections with examples",
+          ],
+          [
+            "Practice",
+            "Completes a guided task",
+            "Can I do this on my own? Focused but unsure",
+            "The task feels too difficult",
+            "Provide hints, a template, and progressive practice",
+          ],
+          [
+            "Application",
+            "Uses the skill in a real situation",
+            "How do I adapt this? Confident but cautious",
+            "No follow-up support",
+            "Add a job aid, reflection prompt, or follow-up activity",
+          ],
+        ],
+      },
+      { type: "heading", id: "keep-it-simple", title: "Keep It Simple" },
+      {
+        type: "paragraph",
+        text: "You can create a learner journey map with paper, sticky notes, a spreadsheet, or a digital whiteboard.",
+      },
+      { type: "paragraph", text: "The tool is less important than the questions it helps you ask:" },
+      {
+        type: "list",
+        items: [
+          "Where might learners hesitate?",
+          "Where could they lose confidence?",
+          "What information do they need at this moment?",
+          "Where should they practise?",
+          "When should feedback happen?",
+          "How will they apply the learning afterward?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A learner journey map is never truly finished. Update it as you learn more from your learners.",
+      },
+      { type: "heading", id: "final-thought", title: "Final Thought" },
+      {
+        type: "paragraph",
+        text: "The value of a learner journey map is not the completed table.",
+      },
+      {
+        type: "paragraph",
+        text: "Its value comes from pausing to see the experience from another person's perspective.",
+      },
+      {
+        type: "paragraph",
+        text: "When you understand what learners are doing, thinking, and feeling, you can create learning that feels clearer, more supportive, and more meaningful.",
+      },
+      {
+        type: "paragraph",
+        text: "Behind every module, activity, and assessment is a real person trying to learn.",
+      },
+    ],
+  },
+  {
+    id: "post-011",
+    slug: "understanding-learner-personas",
+    title: "Understanding Learner Personas",
+    excerpt:
+      "Learner personas help learning designers move beyond assumptions and make clearer decisions about goals, support, pacing, examples, and access.",
+    category: "Learning Experience Design",
+    author: "LXD Editorial Team",
+    date: "July 12, 2026",
+    readingTime: "5 min read",
+    tags: ["Learner Personas", "Learner Research", "Course Design"],
+    coverImage: "/images/learner-personas.svg",
+    coverAlt:
+      "Illustration of three learner persona profile cards connected to goals, challenges, and learning support notes.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "When we design a course, workshop, or learning activity, it is easy to focus immediately on the content.",
+      },
+      { type: "paragraph", text: "We start asking:" },
+      {
+        type: "list",
+        items: [
+          "What topics should be included?",
+          "What slides should be created?",
+          "What activities should learners complete?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "These are important questions, but they are not the best place to begin.",
+      },
+      {
+        type: "paragraph",
+        text: "Before designing the learning experience, we need to understand the people who will experience it.",
+      },
+      { type: "paragraph", text: "This is where learner personas become useful." },
+      { type: "heading", id: "what-is-a-learner-persona", title: "What Is a Learner Persona?" },
+      {
+        type: "paragraph",
+        text: "A learner persona is a simple profile that represents a typical learner in your target audience.",
+      },
+      {
+        type: "paragraph",
+        text: "It is not a real person, but it is based on real information gathered from interviews, surveys, observations, enrollment data, or conversations with learners.",
+      },
+      { type: "paragraph", text: "A learner persona may include:" },
+      {
+        type: "list",
+        items: [
+          "Background and experience",
+          "Goals and motivations",
+          "Existing knowledge",
+          "Learning preferences",
+          "Challenges and frustrations",
+          "Access to technology",
+          "Time constraints",
+          "Support needs",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The purpose is not to place learners into rigid categories.",
+      },
+      {
+        type: "paragraph",
+        text: "The purpose is to help designers remember that learners have different needs, responsibilities, and reasons for learning.",
+      },
+      {
+        type: "quote",
+        text: "Key idea: A learner persona helps turn a general audience into a person you can design for.",
+      },
+      { type: "heading", id: "why-learner-personas-matter", title: "Why Learner Personas Matter" },
+      {
+        type: "paragraph",
+        text: "Imagine you are creating an online course about data analysis.",
+      },
+      {
+        type: "paragraph",
+        text: "One learner may be a college student who has time to study but has limited work experience.",
+      },
+      {
+        type: "paragraph",
+        text: "Another may be a working professional who understands the business problem but can only study at night.",
+      },
+      {
+        type: "paragraph",
+        text: "A third learner may be comfortable with spreadsheets but anxious about programming.",
+      },
+      {
+        type: "paragraph",
+        text: "They are all taking the same course, but they are not starting from the same place.",
+      },
+      {
+        type: "paragraph",
+        text: "Without learner personas, the course may be designed for an imaginary average learner who does not actually exist.",
+      },
+      { type: "paragraph", text: "With learner personas, you can make better decisions about:" },
+      {
+        type: "list",
+        items: [
+          "The level of difficulty",
+          "The examples you use",
+          "The length of each lesson",
+          "The amount of guidance provided",
+          "The type of activities included",
+          "The technology required",
+          "The support available",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Learner personas help the design become more realistic and more human.",
+      },
+      { type: "heading", id: "gather-information-about-your-learners", title: "Step 1: Gather Information About Your Learners" },
+      {
+        type: "paragraph",
+        text: "A useful learner persona should be based on evidence, not guesswork.",
+      },
+      {
+        type: "paragraph",
+        text: "You can gather information through short interviews, online surveys, focus groups, observation, course records, or informal conversations.",
+      },
+      { type: "paragraph", text: "Ask questions such as:" },
+      {
+        type: "list",
+        items: [
+          "Why are you joining this course?",
+          "What do you already know about the topic?",
+          "What do you find difficult?",
+          "How much time can you realistically spend learning?",
+          "What device do you normally use?",
+          "What would make this experience successful for you?",
+          "What could prevent you from completing it?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "You do not need a large research project.",
+      },
+      {
+        type: "paragraph",
+        text: "Even five thoughtful conversations can reveal patterns that are easy to miss when looking only at course content.",
+      },
+      { type: "heading", id: "look-for-meaningful-patterns", title: "Step 2: Look for Meaningful Patterns" },
+      {
+        type: "paragraph",
+        text: "After gathering information, look for similarities among learners.",
+      },
+      {
+        type: "paragraph",
+        text: "You may notice that several learners have the same goal, such as getting promoted, passing an assessment, or learning a tool required at work.",
+      },
+      {
+        type: "paragraph",
+        text: "You may also find common challenges, such as limited time, unreliable internet, low confidence, or lack of prior knowledge.",
+      },
+      {
+        type: "paragraph",
+        text: "These patterns help you decide how many learner personas you need.",
+      },
+      {
+        type: "paragraph",
+        text: "For a small course, two or three personas may be enough.",
+      },
+      {
+        type: "paragraph",
+        text: "Too many personas can make the design confusing.",
+      },
+      {
+        type: "paragraph",
+        text: "The goal is to represent the most important differences that affect the learning experience.",
+      },
+      { type: "heading", id: "build-a-simple-persona", title: "Step 3: Build a Simple Persona" },
+      {
+        type: "paragraph",
+        text: "A learner persona does not need to be complicated.",
+      },
+      {
+        type: "paragraph",
+        text: "Start with a fictional name and a short description.",
+      },
+      { type: "heading", id: "maria-the-busy-professional", title: "Example: Maria, the Busy Professional" },
+      {
+        type: "paragraph",
+        text: "Maria is a 34-year-old administrative officer who wants to learn data visualization for work. She is comfortable using spreadsheets but has never used a business intelligence tool. She studies after work and can only spend about thirty minutes per session.",
+      },
+      { type: "paragraph", text: "Her goal is to create clear reports for her manager." },
+      {
+        type: "paragraph",
+        text: "Her main challenges are limited time, fear of technical terms, and difficulty remembering steps when lessons move too quickly.",
+      },
+      {
+        type: "paragraph",
+        text: "She prefers short demonstrations, guided practice, downloadable examples, and clear feedback.",
+      },
+      {
+        type: "paragraph",
+        text: "This short profile already gives the designer useful direction.",
+      },
+      {
+        type: "paragraph",
+        text: "The lessons should be focused, practical, and easy to continue after a break.",
+      },
+      { type: "heading", id: "focus-on-design-relevant-details", title: "Step 4: Focus on Design-Relevant Details" },
+      {
+        type: "paragraph",
+        text: "A common mistake is adding details that do not help the design.",
+      },
+      {
+        type: "paragraph",
+        text: "A persona does not need a favorite food, favorite color, or full personal history unless those details affect the learning experience.",
+      },
+      {
+        type: "paragraph",
+        text: "Include only information that changes your design decisions.",
+      },
+      {
+        type: "table",
+        headers: ["Category", "Example"],
+        rows: [
+          ["Goal", "Create reports for work"],
+          ["Existing knowledge", "Comfortable with spreadsheets"],
+          ["Motivation", "Career growth"],
+          ["Constraint", "Limited study time"],
+          ["Frustration", "Technical language"],
+          ["Preferred support", "Guided examples and feedback"],
+          ["Technology access", "Laptop and mobile phone"],
+        ],
+      },
+      {
+        type: "quote",
+        text: "Design tip: Every detail in the persona should help answer the question, What should we do differently because of this?",
+      },
+      { type: "heading", id: "use-the-persona-during-design", title: "Step 5: Use the Persona During Design" },
+      {
+        type: "paragraph",
+        text: "Creating a learner persona is only useful if you return to it while designing.",
+      },
+      { type: "paragraph", text: "When planning a lesson, ask:" },
+      {
+        type: "list",
+        items: [
+          "Would this learner understand the instructions?",
+          "Does this activity connect with their goal?",
+          "Can they complete it using the device they have?",
+          "Is the lesson too long for the time available?",
+          "What support would help them continue?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "For Maria, a two-hour lecture may not work well.",
+      },
+      {
+        type: "paragraph",
+        text: "A better approach may be a series of short lessons, each followed by a small task using a realistic workplace example.",
+      },
+      {
+        type: "paragraph",
+        text: "The learner persona becomes a practical design tool, not just a document created at the beginning and forgotten later.",
+      },
+      { type: "heading", id: "avoid-turning-personas-into-stereotypes", title: "Avoid Turning Personas Into Stereotypes" },
+      {
+        type: "paragraph",
+        text: "Learner personas should guide empathy, not limit it.",
+      },
+      {
+        type: "paragraph",
+        text: "They should not assume that every learner of a certain age, profession, or background behaves the same way.",
+      },
+      {
+        type: "paragraph",
+        text: "Real learners are more complex than any profile.",
+      },
+      {
+        type: "paragraph",
+        text: "Use personas as flexible reference points and continue validating them through feedback, observation, and testing.",
+      },
+      {
+        type: "paragraph",
+        text: "As you learn more, update the personas.",
+      },
+      {
+        type: "paragraph",
+        text: "A learner persona should evolve with the course and the audience.",
+      },
+      { type: "heading", id: "a-simple-learner-persona-template", title: "A Simple Learner Persona Template" },
+      {
+        type: "paragraph",
+        text: "You can create a learner persona using the following sections:",
+      },
+      {
+        type: "list",
+        items: [
+          "Persona name",
+          "Short background",
+          "Main learning goal",
+          "Existing knowledge",
+          "Motivation",
+          "Challenges",
+          "Time availability",
+          "Technology access",
+          "Preferred learning support",
+          "What success looks like",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "You can create it using a document, spreadsheet, presentation, or digital whiteboard.",
+      },
+      {
+        type: "paragraph",
+        text: "The format matters less than the quality of the insight.",
+      },
+      { type: "heading", id: "final-thoughts", title: "Final Thoughts" },
+      {
+        type: "paragraph",
+        text: "Good learning design starts with understanding the learner.",
+      },
+      {
+        type: "paragraph",
+        text: "Learner personas help us move beyond assumptions and design with real needs in mind.",
+      },
+      {
+        type: "paragraph",
+        text: "They remind us that learners are not simply course participants.",
+      },
+      {
+        type: "paragraph",
+        text: "They are people with goals, responsibilities, frustrations, strengths, and limited time.",
+      },
+      {
+        type: "paragraph",
+        text: "When we understand who they are and what they need, we can create learning experiences that feel more relevant, supportive, and achievable.",
+      },
+      {
+        type: "paragraph",
+        text: "That is the real value of a learner persona.",
+      },
+      {
+        type: "paragraph",
+        text: "It helps us stop designing for everyone in general and start designing for someone in particular.",
       },
     ],
   },

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Download } from "lucide-react";
 import type { ArticleBlock } from "@/data/posts";
 
 type ArticleBodyProps = {
@@ -33,7 +34,7 @@ export function ArticleBody({ blocks }: ArticleBodyProps) {
               {block.items.map((item) => (
                 <li key={item.title}>
                   <strong>{item.title}</strong>
-                  <span>{item.text}</span>
+                  {item.text ? <span>{item.text}</span> : null}
                 </li>
               ))}
             </ol>
@@ -83,6 +84,22 @@ export function ArticleBody({ blocks }: ArticleBodyProps) {
               <Image src={block.src} alt={block.alt} width={1200} height={720} />
               <figcaption>{block.caption}</figcaption>
             </figure>
+          );
+        }
+
+        if (block.type === "download") {
+          return (
+            <aside key={block.href} className="article-download">
+              <div>
+                <p className="article-download__eyebrow">{block.fileType}</p>
+                <h3>{block.title}</h3>
+                <p>{block.description}</p>
+              </div>
+              <a href={block.href} download>
+                <Download aria-hidden="true" />
+                Download
+              </a>
+            </aside>
           );
         }
 

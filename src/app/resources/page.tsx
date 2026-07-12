@@ -4,6 +4,12 @@ import { SectionHeader } from "@/components/shared/SectionHeader";
 const resources = [
   { title: "Course Design Checklist", description: "A practical sequence for aligning outcomes, activities, feedback, and assessment." },
   { title: "Learner Persona Template", description: "A simple way to document learner goals, barriers, motivation, and support needs." },
+  {
+    title: "Learner Journey Map Template",
+    description: "A downloadable spreadsheet for mapping learner actions, emotions, pain points, and design opportunities.",
+    href: "/resources/learner-journey-map-template.xlsx",
+    actionLabel: "Download template",
+  },
   { title: "Course Journey Map", description: "A planning tool for mapping awareness, practice, feedback, reflection, and transfer." },
   { title: "Assessment Design Guide", description: "Prompts for creating assessments that measure application, not only recall." },
   { title: "AI Prompt Guide for Educators", description: "Reusable prompts for lesson planning, activity design, feedback, and reflection." },
@@ -27,4 +33,3 @@ export default function ResourcesPage() {
     </main>
   );
 }
-

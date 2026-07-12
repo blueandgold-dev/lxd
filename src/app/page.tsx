@@ -30,7 +30,7 @@ export default function Home() {
       <section className="bg-secondary px-5 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeader title="Recent articles" description="Long-form guides for educators, trainers, and instructional designers." />
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
               <BlogCard key={post.id} post={post} />
             ))}
@@ -51,4 +51,3 @@ export default function Home() {
     </main>
   );
 }
-
