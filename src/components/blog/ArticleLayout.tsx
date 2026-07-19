@@ -2,6 +2,7 @@ import type { BlogPost } from "@/data/posts";
 import type { TocItem } from "@/lib/posts";
 import { ArticleBody } from "@/components/blog/ArticleBody";
 import { BlogCard } from "@/components/blog/BlogCard";
+import { NewPostBadge } from "@/components/blog/NewPostBadge";
 import { PostReactions } from "@/components/blog/PostReactions";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { Badge } from "@/components/shared/Badge";
@@ -18,7 +19,10 @@ export function ArticleLayout({ post, toc, relatedPosts }: ArticleLayoutProps) {
     <main>
       <section className="border-b border-border bg-background px-5 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <Badge>{post.category}</Badge>
+          <div className="flex flex-wrap items-center gap-2">
+            <Badge>{post.category}</Badge>
+            <NewPostBadge newUntil={post.newUntil} />
+          </div>
           <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">{post.title}</h1>
           <p className="mt-5 text-lg leading-8 text-muted">{post.excerpt}</p>
           <div className="mt-6 flex flex-wrap items-center gap-3 text-sm font-medium text-muted">

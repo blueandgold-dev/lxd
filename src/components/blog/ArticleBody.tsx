@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Download } from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
 import type { ArticleBlock } from "@/data/posts";
 
 type ArticleBodyProps = {
@@ -98,6 +98,38 @@ export function ArticleBody({ blocks }: ArticleBodyProps) {
               <a href={block.href} download>
                 <Download aria-hidden="true" />
                 Download
+              </a>
+            </aside>
+          );
+        }
+
+        if (block.type === "collapsible") {
+          return (
+            <details key={`${block.title}-${index}`} className="article-collapsible">
+              <summary>
+                <span>
+                  <strong>{block.title}</strong>
+                  <small>{block.summary}</small>
+                </span>
+              </summary>
+              <pre>
+                <code>{block.code}</code>
+              </pre>
+            </details>
+          );
+        }
+
+        if (block.type === "externalLink") {
+          return (
+            <aside key={`${block.href}-${index}`} className="article-link-callout">
+              <div>
+                <p className="article-link-callout__eyebrow">Final Output</p>
+                <h3>{block.title}</h3>
+                <p>{block.description}</p>
+              </div>
+              <a href={block.href} target="_blank" rel="noreferrer">
+                <ExternalLink aria-hidden="true" />
+                {block.label}
               </a>
             </aside>
           );

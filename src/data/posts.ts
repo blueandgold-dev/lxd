@@ -7,6 +7,8 @@ export type ArticleBlock =
   | { type: "table"; headers: string[]; rows: string[][] }
   | { type: "image"; src: string; alt: string; caption: string }
   | { type: "quote"; text: string }
+  | { type: "collapsible"; title: string; summary: string; code: string }
+  | { type: "externalLink"; title: string; description: string; href: string; label: string }
   | { type: "download"; title: string; description: string; href: string; fileType: string };
 
 export type BlogPost = {
@@ -20,6 +22,7 @@ export type BlogPost = {
   readingTime: string;
   tags: string[];
   featured?: boolean;
+  newUntil?: string;
   coverImage: string;
   coverAlt: string;
   blocks: ArticleBlock[];
@@ -2155,6 +2158,1113 @@ export const posts: BlogPost[] = [
       {
         type: "paragraph",
         text: "It helps us stop designing for everyone in general and start designing for someone in particular.",
+      },
+    ],
+  },
+  {
+    id: "post-012",
+    slug: "is-a-slide-presentation-with-qa-already-lxd",
+    title: "Is a Slide Presentation with Q&A Already Learning Experience Design?",
+    excerpt:
+      "A Grade 5 Science example showing how a slide-based water cycle lesson can become a complete Learning Experience Design.",
+    category: "Learning Experience Design",
+    author: "Rollyn Moises",
+    date: "July 19, 2026",
+    readingTime: "6-8 min read",
+    tags: ["Learning Experience Design", "Instructional Design", "Grade 5", "Science Education", "Water Cycle", "Teaching Strategies"],
+    newUntil: "2026-07-22",
+    coverImage: "/images/slide-qa-lxd.svg",
+    coverAlt:
+      "Illustration of a slide-based water cycle lesson connected to learning design touchpoints such as questioning, practice, feedback, and reflection.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "Teachers today have access to many tools for creating instructional materials. Canva, PowerPoint, Google Slides, interactive quizzes, videos, and artificial intelligence can help educators produce attractive lessons quickly.",
+      },
+      {
+        type: "paragraph",
+        text: "However, creating a beautiful slide presentation does not automatically mean that a teacher has designed a complete learning experience.",
+      },
+      {
+        type: "paragraph",
+        text: "A slide deck is an instructional material. Learning Experience Design, or LXD, involves designing the entire experience that helps learners understand, practice, apply, and reflect on what they are learning.",
+      },
+      {
+        type: "paragraph",
+        text: "To see the difference, consider a Grade 5 Science lesson about the water cycle.",
+      },
+      { type: "heading", id: "a-traditional-slide-based-lesson", title: "A Traditional Slide-Based Lesson" },
+      {
+        type: "paragraph",
+        text: "A teacher might create a presentation containing the following slides:",
+      },
+      {
+        type: "orderedList",
+        items: [
+          { title: "What is the water cycle?", text: "" },
+          { title: "Evaporation", text: "" },
+          { title: "Condensation", text: "" },
+          { title: "Precipitation", text: "" },
+          { title: "Collection", text: "" },
+          { title: "Review questions", text: "" },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The teacher presents each slide, explains the concepts, and asks students questions such as:",
+      },
+      {
+        type: "list",
+        items: [
+          "What is evaporation?",
+          "What happens during condensation?",
+          "What are the four stages of the water cycle?",
+          "Do you have any questions?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This is a valid classroom lesson. The slides help organize the information, and the questions allow the teacher to check whether students are listening.",
+      },
+      {
+        type: "paragraph",
+        text: "However, the experience is still mostly teacher-centered. The teacher presents the information, while the students receive and recall it.",
+      },
+      {
+        type: "paragraph",
+        text: "Adding questions and answers improves interaction, but Q&A alone does not necessarily make the lesson an example of Learning Experience Design.",
+      },
+      { type: "heading", id: "turning-the-same-lesson-into-an-lxd-experience", title: "Turning the Same Lesson into an LXD Experience" },
+      {
+        type: "paragraph",
+        text: "An LXD-oriented lesson begins by asking what students should be able to do after the lesson.",
+      },
+      { type: "paragraph", text: "For example:" },
+      {
+        type: "quote",
+        text: "By the end of the lesson, Grade 5 students should be able to explain the stages of the water cycle and illustrate how water moves through the environment.",
+      },
+      {
+        type: "paragraph",
+        text: "This learning outcome is more useful than simply saying that students should understand the water cycle. It identifies an observable performance: students must explain and illustrate the process.",
+      },
+      {
+        type: "paragraph",
+        text: "The teacher can then design the learning experience around that outcome.",
+      },
+      { type: "heading", id: "step-1-begin-with-a-familiar-experience", title: "Step 1: Begin with a Familiar Experience" },
+      {
+        type: "paragraph",
+        text: "Instead of immediately showing the definition of evaporation, the teacher can present a picture of wet clothes hanging outside.",
+      },
+      { type: "paragraph", text: "The teacher asks:" },
+      {
+        type: "quote",
+        text: "The clothes were wet this morning, but they became dry in the afternoon. Where did the water go?",
+      },
+      {
+        type: "paragraph",
+        text: "Students may say that the water disappeared, dried up, or went into the air.",
+      },
+      {
+        type: "paragraph",
+        text: "This question activates their prior knowledge. It also creates curiosity because the lesson begins with an experience they already understand.",
+      },
+      { type: "heading", id: "step-2-let-students-make-a-prediction", title: "Step 2: Let Students Make a Prediction" },
+      {
+        type: "paragraph",
+        text: "The teacher can then show another image, such as water droplets forming outside a cold glass.",
+      },
+      { type: "paragraph", text: "Students are asked:" },
+      { type: "quote", text: "Where did these water droplets come from?" },
+      {
+        type: "paragraph",
+        text: "Before giving the answer, students write or discuss their predictions with a partner.",
+      },
+      {
+        type: "paragraph",
+        text: "This small activity changes the role of the learner. Students are no longer simply waiting for the explanation. They are observing, thinking, and forming ideas.",
+      },
+      { type: "heading", id: "step-3-introduce-the-concepts-in-small-sections", title: "Step 3: Introduce the Concepts in Small Sections" },
+      {
+        type: "paragraph",
+        text: "The teacher can now use slides to explain the four main stages:",
+      },
+      { type: "list", items: ["Evaporation", "Condensation", "Precipitation", "Collection"] },
+      {
+        type: "paragraph",
+        text: "The slides are still useful, but they are no longer the entire lesson. They support the learning experience.",
+      },
+      {
+        type: "paragraph",
+        text: "Each concept can be connected to something familiar:",
+      },
+      {
+        type: "orderedList",
+        items: [
+          { title: "Evaporation", text: "Wet clothes drying under the sun" },
+          { title: "Condensation", text: "Droplets forming on a cold glass" },
+          { title: "Precipitation", text: "Rain falling from clouds" },
+          { title: "Collection", text: "Water gathering in rivers, lakes, and oceans" },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This makes an abstract scientific process easier for Grade 5 learners to understand.",
+      },
+      { type: "heading", id: "step-4-add-an-active-learning-task", title: "Step 4: Add an Active Learning Task" },
+      {
+        type: "paragraph",
+        text: "After discussing the stages, students can work in small groups.",
+      },
+      {
+        type: "paragraph",
+        text: "Each group receives four cards containing the stages of the water cycle. Their task is to arrange the cards in the correct sequence and explain what happens during each stage.",
+      },
+      {
+        type: "paragraph",
+        text: "The teacher may also provide picture cards representing the sun, clouds, rain, rivers, lakes, and oceans.",
+      },
+      {
+        type: "paragraph",
+        text: "Students must connect the pictures to the correct stage.",
+      },
+      {
+        type: "paragraph",
+        text: "This activity allows students to organize information, explain their reasoning, and learn from one another.",
+      },
+      { type: "heading", id: "step-5-use-better-questions", title: "Step 5: Use Better Questions" },
+      {
+        type: "paragraph",
+        text: "Questions are an important part of LXD, but the quality of the questions matters.",
+      },
+      { type: "paragraph", text: "A recall question might be:" },
+      { type: "quote", text: "What is evaporation?" },
+      { type: "paragraph", text: "A deeper question might be:" },
+      { type: "quote", text: "What could happen to the water cycle if there were no heat from the sun?" },
+      { type: "paragraph", text: "Another application question could be:" },
+      { type: "quote", text: "Why do puddles disappear after several hours of sunlight?" },
+      {
+        type: "paragraph",
+        text: "These questions encourage students to explain relationships and apply what they have learned.",
+      },
+      {
+        type: "paragraph",
+        text: "Instead of only asking, Do you understand?, the teacher gathers evidence of understanding.",
+      },
+      { type: "heading", id: "step-6-give-students-a-meaningful-challenge", title: "Step 6: Give Students a Meaningful Challenge" },
+      { type: "paragraph", text: "The teacher can provide this scenario:" },
+      {
+        type: "quote",
+        text: "Your younger brother thinks that rainwater comes from water stored permanently inside clouds. Create a simple drawing and explanation that will help him understand where rain comes from.",
+      },
+      {
+        type: "paragraph",
+        text: "Students create a diagram showing the movement of water from the ground to the atmosphere and back again.",
+      },
+      {
+        type: "paragraph",
+        text: "This task is meaningful because students use what they learned to explain the concept to another person.",
+      },
+      {
+        type: "paragraph",
+        text: "The activity also allows learners to demonstrate understanding through words, pictures, arrows, and labels.",
+      },
+      { type: "heading", id: "step-7-provide-feedback", title: "Step 7: Provide Feedback" },
+      {
+        type: "paragraph",
+        text: "The teacher reviews the students' diagrams using simple criteria:",
+      },
+      {
+        type: "list",
+        items: [
+          "Are the four stages included?",
+          "Are the stages arranged correctly?",
+          "Do the arrows show how water moves?",
+          "Is the explanation clear?",
+          "Are the scientific terms used correctly?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Students can then revise their work based on the feedback.",
+      },
+      {
+        type: "paragraph",
+        text: "Feedback is essential because the learning experience should not end when students submit an activity. Learners should have an opportunity to identify mistakes and improve their understanding.",
+      },
+      { type: "heading", id: "step-8-end-with-reflection", title: "Step 8: End with Reflection" },
+      {
+        type: "paragraph",
+        text: "At the end of the lesson, students answer a short reflection question:",
+      },
+      { type: "quote", text: "Where can you observe the water cycle in your daily life?" },
+      { type: "paragraph", text: "Possible answers may include:" },
+      {
+        type: "list",
+        items: [
+          "Wet clothes drying",
+          "Steam rising from hot water",
+          "Clouds forming",
+          "Rain falling",
+          "Water collecting in puddles",
+          "Droplets appearing on cold containers",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Reflection helps learners connect classroom content to real-life experiences.",
+      },
+      { type: "heading", id: "what-makes-this-lxd", title: "What Makes This LXD?" },
+      {
+        type: "paragraph",
+        text: "The difference is not the software used to create the lesson.",
+      },
+      {
+        type: "paragraph",
+        text: "The teacher may still use Canva, PowerPoint, or Google Slides. The lesson may still include pictures, explanations, and questions.",
+      },
+      {
+        type: "paragraph",
+        text: "What makes it an LXD-oriented lesson is the intentional design of the complete learning journey.",
+      },
+      { type: "paragraph", text: "The experience includes:" },
+      {
+        type: "list",
+        items: [
+          "A clear learning outcome",
+          "Connection to prior knowledge",
+          "Curiosity and prediction",
+          "Visual explanations",
+          "Active participation",
+          "Collaboration",
+          "Meaningful questions",
+          "Real-world application",
+          "Feedback",
+          "Reflection",
+        ],
+      },
+      { type: "paragraph", text: "The slides are only one part of the experience." },
+      { type: "heading", id: "slides-are-touchpoints-not-the-entire-experience", title: "Slides Are Touchpoints, Not the Entire Experience" },
+      {
+        type: "paragraph",
+        text: "In Learning Experience Design, every interaction between the learner and the lesson can be considered a touchpoint.",
+      },
+      {
+        type: "paragraph",
+        text: "For the water cycle lesson, the touchpoints may include:",
+      },
+      {
+        type: "list",
+        items: [
+          "The opening photograph",
+          "The teacher's questions",
+          "The slide presentation",
+          "The card-sorting activity",
+          "The group discussion",
+          "The water-cycle diagram",
+          "The teacher's feedback",
+          "The reflection question",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Together, these touchpoints form the learner's experience.",
+      },
+      {
+        type: "paragraph",
+        text: "A visually attractive presentation may capture attention, but learners also need opportunities to think, decide, practice, make mistakes, receive feedback, and apply knowledge.",
+      },
+      { type: "heading", id: "a-simple-lxd-structure-for-grade-5-lessons", title: "A Simple LXD Structure for Grade 5 Lessons" },
+      {
+        type: "paragraph",
+        text: "Teachers can use the following structure when designing slide-based lessons:",
+      },
+      {
+        type: "orderedList",
+        items: [
+          { title: "Connect", text: "Begin with something familiar to the learners." },
+          { title: "Question", text: "Present a problem, image, story, or situation that creates curiosity." },
+          { title: "Explain", text: "Introduce the concept using clear language and appropriate visuals." },
+          { title: "Practice", text: "Allow students to perform a guided activity." },
+          { title: "Apply", text: "Give learners a realistic problem or task." },
+          { title: "Receive Feedback", text: "Help students understand what they did correctly and what they can improve." },
+          { title: "Reflect", text: "Ask learners to connect the lesson to their own lives or experiences." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This structure can be applied to Science, Mathematics, English, Social Studies, and other Grade 5 subjects.",
+      },
+      { type: "heading", id: "final-thought", title: "Final Thought" },
+      {
+        type: "paragraph",
+        text: "A slide presentation with questions and answers can be part of Learning Experience Design, but it is not automatically LXD.",
+      },
+      { type: "paragraph", text: "The important question is not:" },
+      { type: "quote", text: "Did I create attractive slides?" },
+      { type: "paragraph", text: "The more important questions are:" },
+      { type: "quote", text: "What did the learners experience?" },
+      { type: "quote", text: "What did they actively do?" },
+      { type: "quote", text: "How did they receive feedback?" },
+      { type: "quote", text: "How did they demonstrate that they could apply what they learned?" },
+      {
+        type: "paragraph",
+        text: "Learning Experience Design happens when educators intentionally create a journey that moves students from curiosity to understanding, from understanding to practice, and from practice to meaningful application.",
+      },
+      {
+        type: "paragraph",
+        text: "The presentation supports that journey. It should never become the entire journey.",
+      },
+    ],
+  },
+  {
+    id: "post-013",
+    slug: "simple-water-cycle-lxd-implementation",
+    title: "A Simple Implementation of the Water Cycle LXD Lesson",
+    excerpt:
+      "A practical walkthrough for turning the water cycle LXD plan into a simple classroom-ready slide experience with activities, feedback, and reflection.",
+    category: "Learning Experience Design",
+    author: "Rollyn Moises",
+    date: "July 19, 2026",
+    readingTime: "5 min read",
+    tags: ["Learning Experience Design", "Water Cycle", "Grade 5", "Slide Design", "Teaching Strategies"],
+    newUntil: "2026-07-22",
+    coverImage: "/images/water-cycle-implementation.svg",
+    coverAlt:
+      "Illustration of a water cycle lesson implementation moving from familiar examples to prediction, practice, feedback, reflection, and a final Canva output.",
+    blocks: [
+      {
+        type: "paragraph",
+        text: "The previous water cycle article explained that a slide presentation with Q&A is not automatically Learning Experience Design. The important shift is to design the whole learning journey: what learners notice, what they do, how they practice, how they receive feedback, and how they apply the idea.",
+      },
+      {
+        type: "paragraph",
+        text: "This article shows a simple implementation of that idea. The goal is not to create a complicated lesson. The goal is to turn a basic Grade 5 Science slide deck into a clearer, more active, and more learner-centered experience.",
+      },
+      { type: "heading", id: "lesson-goal", title: "Lesson Goal" },
+      {
+        type: "paragraph",
+        text: "Before creating the slides, start with a clear performance outcome. For this lesson, the outcome can be simple:",
+      },
+      {
+        type: "quote",
+        text: "By the end of the lesson, Grade 5 students should be able to explain the stages of the water cycle and illustrate how water moves through the environment.",
+      },
+      {
+        type: "paragraph",
+        text: "This outcome tells the teacher what students need to demonstrate. They should not only remember the four terms. They should be able to explain and illustrate the process.",
+      },
+      { type: "heading", id: "why-use-canva", title: "Why Use Canva for This Example?" },
+      {
+        type: "paragraph",
+        text: "Canva is an online design tool for creating presentations, posters, worksheets, videos, and classroom materials. For teachers, it is useful because it combines templates, images, text tools, sharing options, and Canva AI in one workspace.",
+      },
+      {
+        type: "paragraph",
+        text: "In this implementation, Canva is not the learning design by itself. It is the production tool used to turn the LXD plan into a visual slide experience. The learning design still comes from the outcome, questions, activities, feedback, and reflection.",
+      },
+      { type: "heading", id: "using-canva-on-windows", title: "Using Canva on Windows" },
+      {
+        type: "paragraph",
+        text: "If you prefer working outside the browser, Canva also provides a Windows desktop app. This can be useful for teachers who want a dedicated design workspace while preparing slides, worksheets, or presentation materials.",
+      },
+      {
+        type: "paragraph",
+        text: "Install the desktop app from Canva's official Windows download page. Canva lists the Windows app for Windows 10 and later.",
+      },
+      {
+        type: "externalLink",
+        title: "Download Canva for Windows",
+        description:
+          "Use Canva's official Windows download page if you want to create and edit the presentation from the desktop app.",
+        href: "https://www.canva.com/download/windows/",
+        label: "Download Canva",
+      },
+      {
+        type: "paragraph",
+        text: "In the Windows app, Canva also provides a Make available offline option from the file menu. For a teacher, this is useful when the presentation needs to be opened or reviewed even when Wi-Fi is not available.",
+      },
+      {
+        type: "image",
+        src: "/images/canva-make-available-offline.jpg",
+        alt: "Canva Windows app file menu showing the Make available offline option for the Water Cycle Journey presentation.",
+        caption:
+          "The Canva Windows app includes a Make available offline option in the file menu, which helps make the selected design accessible without Wi-Fi.",
+      },
+      {
+        type: "paragraph",
+        text: "A practical note: prepare and save the deck while connected first. Online access is still important for Canva AI, templates, cloud sync, sharing links, and downloading updated assets. Once the design is ready, use Make available offline or export a PDF or presentation file for more dependable offline classroom delivery.",
+      },
+      { type: "heading", id: "how-to-do-it-in-canva", title: "How to Do It in Canva" },
+      {
+        type: "paragraph",
+        text: "The process below shows the simple Canva workflow used to create the water cycle presentation.",
+      },
+      {
+        type: "image",
+        src: "/images/canva-water-cycle-step1.jpg",
+        alt: "Canva AI prompt screen with a request for a Grade 5 water-cycle example with interactive classroom prompts and presenter notes.",
+        caption:
+          "Step 1: Open Canva AI and describe the learning material you want. The prompt asks for a Grade 5 water-cycle example, interactive classroom prompts, presenter notes, minimal text, strong visual storytelling, and a final application challenge.",
+      },
+      {
+        type: "paragraph",
+        text: "Start by giving Canva AI a clear design brief. Include the grade level, topic, learning intent, interaction style, and the kind of output you want. The stronger the prompt, the easier it is to review the first draft.",
+      },
+      {
+        type: "collapsible",
+        title: "Canva AI prompt used for the water cycle deck",
+        summary: "Expand to view the full prompt copied into Canva AI.",
+        code: `# Canva AI Prompt: Grade 5 Water Cycle Presentation
+
+Create an editable **10-slide, 16:9 classroom presentation about the Water Cycle for Grade 5 students**.
+
+The presentation must teach the water cycle through an engaging, learner-centered experience. Do not create a conventional lecture deck containing only definitions, diagrams, and bullet points.
+
+Use Learning Experience Design principles internally when structuring the presentation, but **do not mention Learning Experience Design, LXD, instructional design, or teaching methodology anywhere in the student-facing slides**.
+
+The presentation should feel like a guided learning journey in which Grade 5 students:
+
+1. Connect the topic to familiar experiences
+2. Observe real-world examples
+3. Make predictions
+4. Discover important concepts
+5. Participate in short activities
+6. Explain their reasoning
+7. Apply what they learned
+8. Receive feedback
+9. Reflect on the lesson
+
+## Lesson Title
+
+**The Amazing Journey of Water**
+
+Subtitle:
+
+**Exploring the Water Cycle**
+
+## Target Learners
+
+- Grade 5 students
+- Approximately 10 to 11 years old
+- Basic familiarity with rain, clouds, rivers, sunlight, and weather
+- Mixed reading and learning abilities
+
+## Learning Objectives
+
+By the end of the presentation, students should be able to:
+
+- Identify the four main stages of the water cycle
+- Explain evaporation, condensation, precipitation, and collection in simple language
+- Arrange the stages in the correct sequence
+- Explain how heat from the sun helps move water through the environment
+- Connect the water cycle to examples from everyday life
+- Create or explain a simple water-cycle diagram
+
+## Overall Lesson Flow
+
+Organize the presentation using this learner journey:
+
+**Notice -> Wonder -> Predict -> Discover -> Practice -> Apply -> Reflect**
+
+Do not begin with a formal definition of the water cycle. Begin with a familiar situation that makes students curious.
+
+## Slide-by-Slide Instructions
+
+### Slide 1: Opening Mystery
+
+Title:
+
+**Where Did the Water Go?**
+
+Show wet clothes hanging outside under the sun.
+
+Ask:
+
+> The clothes were wet this morning, but they are dry now. Where did the water go?
+
+Add a visible instruction:
+
+**Think quietly for 10 seconds.**
+
+Then:
+
+**Share your idea with a partner.**
+
+Do not reveal the answer on this slide.
+
+Use a bright, realistic, child-friendly illustration.
+
+Purpose: Activate prior knowledge and create curiosity.
+
+---
+
+### Slide 2: Look Closely
+
+Title:
+
+**Water Can Move Even When We Cannot See It**
+
+Show three familiar situations:
+
+- A puddle disappearing after sunlight
+- Steam rising from hot water
+- Wet hair drying
+
+Ask:
+
+> What do these situations have in common?
+
+Add three response choices:
+
+- Water is changing location
+- Water is being destroyed
+- Water is turning into air forever
+
+Allow students to choose and explain their thinking before revealing the answer.
+
+Purpose: Help students notice that water can change form and move.
+
+---
+
+### Slide 3: Discover Evaporation
+
+Title:
+
+**Stage 1: Evaporation**
+
+Show the sun heating water in an ocean, lake, river, or puddle.
+
+Use arrows to show water moving upward.
+
+Student-friendly explanation:
+
+> Heat from the sun changes liquid water into water vapor. The vapor rises into the air.
+
+Include the prompt:
+
+> Where have you seen evaporation happen?
+
+Show small visual examples:
+
+- Drying clothes
+- Disappearing puddles
+- Steam from warm water
+
+Keep the explanation short and visual.
+
+Purpose: Introduce evaporation through recognizable examples.
+
+---
+
+### Slide 4: Make a Prediction
+
+Title:
+
+**Where Do Clouds Come From?**
+
+Show water vapor rising toward cooler air.
+
+Ask:
+
+> What do you think happens when warm water vapor reaches cooler air?
+
+Provide three choices:
+
+- It forms tiny water droplets
+- It disappears completely
+- It turns into sunlight
+
+Add:
+
+**Choose your answer and explain why.**
+
+Do not reveal the correct answer immediately.
+
+Purpose: Encourage prediction before explanation.
+
+---
+
+### Slide 5: Discover Condensation
+
+Title:
+
+**Stage 2: Condensation**
+
+Show water vapor cooling and becoming tiny droplets that form clouds.
+
+Student-friendly explanation:
+
+> When water vapor cools, it changes into tiny drops of liquid water. These droplets gather to form clouds.
+
+Include a familiar example:
+
+> Water droplets forming outside a cold glass are also caused by condensation.
+
+Ask:
+
+> Did the water pass through the glass, or did it come from the surrounding air?
+
+Use a close-up illustration of a cold glass with droplets.
+
+Purpose: Connect condensation to a real-world observation.
+
+---
+
+### Slide 6: What Happens When Clouds Get Heavy?
+
+Title:
+
+**Stage 3: Precipitation**
+
+Show clouds containing many water droplets.
+
+Use a simple visual sequence:
+
+**Tiny droplets -> Larger droplets -> Heavy clouds -> Water falls**
+
+Student-friendly explanation:
+
+> When water droplets in clouds become too heavy, they fall to Earth.
+
+Show examples of precipitation:
+
+- Rain
+- Snow
+- Sleet
+- Hail
+
+For a tropical classroom context, make rain the main example.
+
+Ask:
+
+> What kind of precipitation do we experience most often?
+
+Purpose: Explain why water falls from clouds.
+
+---
+
+### Slide 7: Where Does the Water Collect?
+
+Title:
+
+**Stage 4: Collection**
+
+Show rainwater flowing into:
+
+- Rivers
+- Lakes
+- Oceans
+- Puddles
+- Soil
+
+Student-friendly explanation:
+
+> Water collects on the ground and in bodies of water. Some water also enters the soil.
+
+Ask:
+
+> Where does rainwater collect near your home or school?
+
+Show arrows connecting collection back to evaporation.
+
+Add:
+
+**The journey begins again.**
+
+Purpose: Show that the water cycle is continuous.
+
+---
+
+### Slide 8: Put the Journey in Order
+
+Title:
+
+**Can You Complete the Water Cycle?**
+
+Show four large movable-looking cards:
+
+- Evaporation
+- Condensation
+- Precipitation
+- Collection
+
+Present them in the wrong order.
+
+Instruction:
+
+> Work with a partner. Arrange the stages in the correct order.
+
+Then ask students to match each stage with an image:
+
+- Sun heating water
+- Clouds forming
+- Rain falling
+- Water gathering in rivers and oceans
+
+Do not display the correct sequence immediately.
+
+Prepare a second reveal state or follow-up animation showing the correct answer.
+
+Purpose: Give students active practice in sequencing and matching.
+
+---
+
+### Slide 9: Solve a Real-World Mystery
+
+Title:
+
+**Why Did the Puddle Disappear?**
+
+Scenario:
+
+> It rained in the morning, and a puddle formed near the school. By the afternoon, the puddle was gone even though nobody removed the water.
+
+Ask students:
+
+1. What happened to the water?
+2. Which stage of the water cycle explains it?
+3. What role did the sun play?
+4. Where might the water go next?
+
+Include the instruction:
+
+**Discuss with your group and prepare a two-sentence explanation.**
+
+Purpose: Let students apply the concept to a realistic situation.
+
+---
+
+### Slide 10: Show What You Learned
+
+Title:
+
+**The Journey of a Drop of Water**
+
+Ask students to imagine that they are one drop of water.
+
+Prompt:
+
+> Describe your journey from the ocean, into the sky, into a cloud, down as rain, and back to a body of water.
+
+Students may respond by:
+
+- Drawing a diagram
+- Writing a short paragraph
+- Explaining the journey aloud
+- Arranging picture cards
+
+Include a simple checklist:
+
+- I included all four stages.
+- I placed the stages in the correct order.
+- I explained how water changes.
+- I showed how the journey begins again.
+
+End with the reflection question:
+
+> Where can you observe the water cycle in your everyday life?
+
+Closing statement:
+
+**Water is always moving, changing, and beginning its journey again.**
+
+Purpose: Assess understanding through explanation, creation, and reflection.
+
+## Visual Design Requirements
+
+Use a modern, engaging Grade 5 Science style.
+
+Use:
+
+- Sky blue, deep blue, teal, white, and warm yellow
+- Large water-cycle illustrations
+- Friendly but scientifically accurate visuals
+- Clear arrows showing movement
+- Rounded cards for questions and activities
+- Large readable fonts
+- Strong contrast
+- One main idea per slide
+- Consistent icons and visual language
+- Diverse student illustrations when students appear
+- Real-world environments familiar to children
+
+Avoid:
+
+- Long paragraphs
+- Dense bullet lists
+- Corporate-style templates
+- Overly childish preschool graphics
+- Decorative elements unrelated to the lesson
+- Small labels
+- Too many animations
+- Complicated scientific terminology
+- Text-heavy diagrams
+- Definitions copied from textbooks
+
+## Learner Participation Requirements
+
+Include visible participation cues throughout the presentation:
+
+- **Look**
+- **Think**
+- **Predict**
+- **Choose**
+- **Discuss**
+- **Arrange**
+- **Explain**
+- **Draw**
+- **Reflect**
+
+At least six slides should require students to respond, predict, discuss, arrange, explain, or create something.
+
+Do not reveal answers immediately on prediction or activity slides. Where possible, use a follow-up animation, duplicate slide, or presenter-controlled reveal.
+
+## Presentation Technique
+
+Design the deck so the teacher does not simply read the slides.
+
+The slides should support:
+
+- Think-pair-share
+- Guided observation
+- Prediction before explanation
+- Visual storytelling
+- Partner discussion
+- Card sorting
+- Scenario-based application
+- Student-created explanations
+- Reflection
+
+Keep most slides below 35 words, excluding labels and activity instructions.
+
+Use visuals to communicate ideas instead of placing every explanation in text.
+
+## Speaker Notes
+
+Add brief presenter notes to every slide.
+
+For each slide, include:
+
+- The purpose of the slide
+- The question the teacher should ask
+- When the teacher should pause
+- Expected student responses
+- Common misconceptions
+- The explanation to provide after students respond
+- A transition to the next slide
+
+Keep the presenter notes practical, conversational, and suitable for a Grade 5 teacher.
+
+## Accessibility
+
+Ensure that:
+
+- Text is readable from the back of a classroom
+- Information is not communicated through color alone
+- Every diagram has clear labels
+- Arrows clearly indicate direction
+- Important vocabulary is visually emphasized
+- Layouts are uncluttered
+- Activities can be completed verbally if needed
+- Images support understanding rather than decoration
+- Animations are subtle and not essential to understanding
+
+## Final Output
+
+Create an editable Canva presentation with:
+
+- 10 slides
+- 16:9 classroom presentation format
+- Grade 5-appropriate language
+- Strong visual storytelling
+- Scientifically accurate water-cycle content
+- Questions and activities throughout
+- Opportunities for prediction, practice, application, and reflection
+- Presenter notes
+- Minimal text
+- A clear progression from everyday experience to scientific understanding
+
+The presentation must teach students about the water cycle through participation and discovery. It should not contain explanations about Learning Experience Design or instructional design.`,
+      },
+      {
+        type: "image",
+        src: "/images/canva-water-cycle-step2.jpg",
+        alt: "Canva AI generated a 10-slide water cycle presentation preview with an opening mystery slide.",
+        caption:
+          "Step 2: Review the generated presentation. Canva produced a 10-slide water cycle deck with an opening mystery, student-friendly visuals, and prompts for prediction, discussion, practice, and application.",
+      },
+      {
+        type: "paragraph",
+        text: "Do not accept the generated deck without review. Check whether the slides support the LXD flow: connect, question, explain, practice, apply, feedback, and reflect.",
+      },
+      {
+        type: "image",
+        src: "/images/canva-water-cycle-step3.jpg",
+        alt: "Canva presentation editor showing the water cycle slide deck with ten slide thumbnails.",
+        caption:
+          "Step 3: Open the presentation editor and revise the slides. This is where you adjust the text, visuals, sequence, prompts, and spacing so each slide has a clear learning purpose.",
+      },
+      {
+        type: "paragraph",
+        text: "In the editor, keep only what helps learners. Shorten text, improve readability, check the slide order, and make sure the visuals support the activity instead of distracting from it.",
+      },
+      {
+        type: "image",
+        src: "/images/canva-water-cycle-step4.jpg",
+        alt: "Canva download panel for the water cycle presentation with PDF Standard selected.",
+        caption:
+          "Step 4: Share or download the final presentation. The example shows the download panel with PDF Standard selected, but Canva can also be used for presenting or sharing a live link.",
+      },
+      {
+        type: "paragraph",
+        text: "After editing, export or share the output based on how it will be used. A PDF is useful for distribution, while a Canva link is useful when learners or reviewers need to view the final presentation online.",
+      },
+      { type: "heading", id: "step-1-create-an-entry-point", title: "Step 1: Create an Entry Point" },
+      {
+        type: "paragraph",
+        text: "Begin with a familiar situation instead of a definition. The first slide can show wet clothes drying under the sun, a puddle disappearing, or steam rising from hot water.",
+      },
+      {
+        type: "paragraph",
+        text: "Ask a question that students can answer from experience:",
+      },
+      { type: "quote", text: "Where did the water go?" },
+      {
+        type: "paragraph",
+        text: "This step helps learners connect the science concept to something they have already seen. It also gives the lesson a reason to continue.",
+      },
+      { type: "heading", id: "step-2-add-a-prediction-moment", title: "Step 2: Add a Prediction Moment" },
+      {
+        type: "paragraph",
+        text: "The next slide can show droplets outside a cold glass. Before explaining condensation, ask students to predict where the droplets came from.",
+      },
+      {
+        type: "paragraph",
+        text: "Students can write one sentence, raise a hand, or discuss with a partner. The activity is short, but it changes the lesson from passive watching to active thinking.",
+      },
+      {
+        type: "list",
+        items: [
+          "Show a familiar image.",
+          "Ask students what they notice.",
+          "Let them make a prediction before giving the answer.",
+          "Use their ideas as a bridge to the science term.",
+        ],
+      },
+      { type: "heading", id: "step-3-explain-the-four-stages", title: "Step 3: Explain the Four Stages" },
+      {
+        type: "paragraph",
+        text: "After students have observed and predicted, introduce the four water cycle stages in small parts:",
+      },
+      {
+        type: "orderedList",
+        items: [
+          { title: "Evaporation", text: "Water changes into vapor because of heat from the sun." },
+          { title: "Condensation", text: "Water vapor cools and forms tiny droplets in clouds." },
+          { title: "Precipitation", text: "Water falls from clouds as rain or another form of precipitation." },
+          { title: "Collection", text: "Water gathers in rivers, lakes, oceans, puddles, and other places." },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Keep the slides visually simple. Use one main idea per slide, short labels, and arrows to show movement. The slides should support explanation, not overload students with text.",
+      },
+      { type: "heading", id: "step-4-insert-a-practice-task", title: "Step 4: Insert a Practice Task" },
+      {
+        type: "paragraph",
+        text: "After the explanation, add a quick practice activity. Students can arrange the four stages in the correct order and match each stage with a picture.",
+      },
+      {
+        type: "paragraph",
+        text: "This practice can be done with printed cards, a board activity, or a slide where students identify the correct sequence.",
+      },
+      {
+        type: "table",
+        headers: ["Practice item", "Learner action", "Teacher check"],
+        rows: [
+          ["Stage cards", "Arrange evaporation, condensation, precipitation, and collection", "Check sequence"],
+          ["Picture cards", "Match sun, clouds, rain, and bodies of water to stages", "Check reasoning"],
+          ["Short explanation", "Say what happens in each stage", "Listen for correct terms"],
+        ],
+      },
+      { type: "heading", id: "step-5-add-an-application-challenge", title: "Step 5: Add an Application Challenge" },
+      {
+        type: "paragraph",
+        text: "The lesson becomes stronger when students use the idea in a realistic task. Give them a simple challenge:",
+      },
+      {
+        type: "quote",
+        text: "Create a simple drawing that explains where rain comes from to someone younger than you.",
+      },
+      {
+        type: "paragraph",
+        text: "This task asks students to organize the stages, use arrows, label the parts, and explain the process in their own words.",
+      },
+      { type: "heading", id: "step-6-plan-feedback", title: "Step 6: Plan Feedback" },
+      {
+        type: "paragraph",
+        text: "Feedback should be part of the design, not something added only if there is time. Use a short checklist so students know what to improve.",
+      },
+      {
+        type: "list",
+        items: [
+          "Are all four stages shown?",
+          "Are the arrows pointing in the correct direction?",
+          "Are the labels clear?",
+          "Does the explanation use the correct science terms?",
+          "Can another person understand the diagram?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Students can revise their drawing after feedback. This turns the activity into a learning moment instead of a one-time submission.",
+      },
+      { type: "heading", id: "step-7-close-with-reflection", title: "Step 7: Close with Reflection" },
+      {
+        type: "paragraph",
+        text: "End with a reflection question that connects the lesson to daily life:",
+      },
+      { type: "quote", text: "Where can you observe the water cycle around you?" },
+      {
+        type: "paragraph",
+        text: "Students might mention rain, clouds, puddles, steam, wet clothes, or droplets on cold containers. This helps them see that the water cycle is not only a diagram in a textbook. It is something they can observe.",
+      },
+      { type: "heading", id: "simple-implementation-flow", title: "Simple Implementation Flow" },
+      {
+        type: "orderedList",
+        items: [
+          { title: "Connect", text: "Start with wet clothes, a puddle, or another familiar example." },
+          { title: "Question", text: "Ask where the water went or where droplets came from." },
+          { title: "Explain", text: "Introduce evaporation, condensation, precipitation, and collection." },
+          { title: "Practice", text: "Use cards, matching, or a sequence activity." },
+          { title: "Apply", text: "Ask students to create a simple water cycle explanation." },
+          { title: "Feedback", text: "Use a checklist and allow revision." },
+          { title: "Reflect", text: "Ask students where they see the water cycle in real life." },
+        ],
+      },
+      { type: "heading", id: "final-output", title: "Final Output" },
+      {
+        type: "paragraph",
+        text: "The final Canva output shows how the lesson can be presented as a simple sequence of learner-centered slides. It keeps the visual design clean while making room for observation, prediction, explanation, practice, application, feedback, and reflection.",
+      },
+      {
+        type: "externalLink",
+        title: "Open the Water Cycle Canva Example",
+        description:
+          "Use this link to view the completed slide-based implementation of the Grade 5 water cycle LXD lesson.",
+        href: "https://canva.link/jv2y4qbb9bc5wpr",
+        label: "View output",
+      },
+      { type: "heading", id: "final-thought", title: "Final Thought" },
+      {
+        type: "paragraph",
+        text: "A simple LXD implementation does not require expensive tools or complex technology. It requires intentional choices.",
+      },
+      {
+        type: "paragraph",
+        text: "When each slide has a learning purpose and each activity gives students a chance to think, practice, apply, and improve, the presentation becomes part of a stronger learning experience.",
       },
     ],
   },

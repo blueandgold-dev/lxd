@@ -4,13 +4,13 @@ import { NewsletterSection } from "@/components/home/NewsletterSection";
 import { RecentArticles } from "@/components/home/RecentArticles";
 import { ResourceCard } from "@/components/shared/ResourceCard";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { getAllPosts, getFeaturedPosts } from "@/lib/posts";
+import { getAllPosts, getPostBySlug } from "@/lib/posts";
 
 const topics = ["Learning Experience Design", "Instructional Design", "AI in Education", "Course Design"];
 
 export default function Home() {
   const posts = getAllPosts();
-  const featuredPost = getFeaturedPosts()[0] ?? posts[0];
+  const featuredPost = getPostBySlug("what-is-learning-experience-design") ?? posts[0];
 
   return (
     <main>

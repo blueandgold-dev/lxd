@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { BlogPost } from "@/data/posts";
+import { NewPostBadge } from "@/components/blog/NewPostBadge";
 import { PostReactions } from "@/components/blog/PostReactions";
 import { Badge } from "@/components/shared/Badge";
 import { CoverVisual } from "@/components/shared/CoverVisual";
@@ -11,7 +12,8 @@ type BlogCardProps = {
 export function BlogCard({ post }: BlogCardProps) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-surface shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-      <Link href={`/blog/${post.slug}`} className="block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+      <Link href={`/blog/${post.slug}`} className="relative block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+        <NewPostBadge newUntil={post.newUntil} placement="overlay" />
         <CoverVisual title={post.title} src={post.coverImage} alt={post.coverAlt} />
       </Link>
       <div className="flex flex-1 flex-col p-5">
